@@ -5,16 +5,31 @@ import Features from './components/Features.vue';
 import Pricing from './components/Pricing.vue';
 import Faq from './components/FAQ.vue';
 import AppFooter from './components/App-Footer.vue';
+import { reactive } from 'vue';
+import { onMounted } from 'vue';
 
-const width = window.innerWidth;
-const height = window.innerHeight;
+const data = reactive({
+  width: null,
+  height: null,
+})
+
+data.width = window.innerWidth;
+data.height = window.innerHeight;
+
+onMounted(() => {
+  window.addEventListener('resize', () => {
+    data.width = window.innerWidth;
+    data.height = window.innerHeight;
+  })
+})
+
 </script>
 
 <template>
   <div class="bg-dark font-inter text-white flex flex-col items-center overflow-y-auto overflow-x-hidden"
-    :style="{ width: width + 'px', height: height + 'px' }">
-    <div class="w-full px-4 sm:w-10/12 md:w-9/12 lg:w-8/12 2xl:w-7/12 flex flex-col">
-      <header id="header" class="w-full py-4 flex items-center justify-between">
+    :style="{ width: data.width + 'px', height: data.height + 'px' }">
+    <div class="w-full px-4 sm:w-10/12 md:w-9/12 lg:w-8/12 relative 2xl:w-7/12 flex flex-col">
+      <header id="header" class="w-full z-20 bg-dark py-4 flex sticky top-0 items-center justify-between">
         <img src="./assets/logo.svg" />
         <nav class="flex items-center gap-x-12">
           <a class="text-lg">Features</a>
