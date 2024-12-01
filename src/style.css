@@ -8,4 +8,8 @@
     .gradient-text {
         @apply bg-clip-text text-transparent bg-text-gradient;
     }
+
+    .my-test {
+        color: #fff;
+    }
 }

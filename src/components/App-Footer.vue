@@ -8,7 +8,7 @@
             <img alt="logo" src="../assets/logo.svg">
             <h2 class="text-text-gray font-semibold text-lg">Ultimate Web Styler Extension</h2>
             <div class="flex w-full justify-center gap-x-24 mt-12">
-                <div class="flex flex-col gap-y-8 items-center px-8">
+                <div class="flex flex-col gap-y-8 px-8">
                     <h2 class="text-primary text-lg">Product</h2>
                     <div class="flex flex-col gap-y-5">
                         <p>Features</p>
@@ -16,14 +16,14 @@
                         <p>Creator</p>
                     </div>
                 </div>
-                <div class="flex flex-col gap-y-8 items-center px-8">
+                <div class="flex flex-col gap-y-8 px-8">
                     <h2 class="text-primary text-lg">Support</h2>
                     <div class="flex flex-col gap-y-5">
                         <p>FAQs</p>
                         <p>Contact Us</p>
                     </div>
                 </div>
-                <div class="flex flex-col gap-y-8 items-center px-8">
+                <div class="flex flex-col gap-y-8 px-8">
                     <h2 class="text-primary text-lg">Legal</h2>
                     <div class="flex flex-col gap-y-5">
                         <p>Privacy Policy</p>

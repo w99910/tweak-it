@@ -1,5 +1,7 @@
-# Vue 3 + TypeScript + Vite
+TWEAK IT
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+- Tired of waiting for your favourite website to support dark mode or light mode? 
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+- Turn any website into any theme you want with this intelligent web styler.
+
+- Preset Styles, Your Own Custom Style, Applied on all websites or only specific website 
