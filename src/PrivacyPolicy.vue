@@ -93,8 +93,9 @@ import Layout from './layout/Layout.vue';
             <div class="flex flex-col gap-y-2">
                 <h2 class="font-semibold text-xl text-white">7. Data Retention</h2>
                 <p>We retain your information for as long as your account is active or as needed to provide you with our
-                    services. You may request the deletion of your data by contacting us at either our support ticket
-                    form or our support email.
+                    services. You may request the deletion of your data by contacting us at <a
+                        href="mailto:support@tweakit.today" class="text-primary cursor-pointer underline"
+                        target="_blank">our support email</a>.
                 </p>
                 <ul class="list-inside list-disc">
                     <li class="py-1">With Stripe: To process payments.
@@ -124,7 +125,8 @@ import Layout from './layout/Layout.vue';
                         To withdraw consent to data processing where applicable.
                     </li>
                 </ul>
-                <p>If you wish to exercise your rights, please contact us at [your email address]. </p>
+                <p>If you wish to exercise your rights, please contact us at <a href="mailto:support@tweakit.today"
+                        class="text-primary cursor-pointer underline" target="_blank">our support email</a>. </p>
             </div>
             <div class="flex flex-col gap-y-2">
                 <h2 class="font-semibold text-xl text-white">10. Changes to This Privacy Policy</h2>
@@ -138,9 +140,8 @@ import Layout from './layout/Layout.vue';
                 <p>If you have any questions about this Privacy Policy, please contact us at:
                 </p>
                 <ul class="list-inside list-disc">
-                    <li class="py-1">Email:
-                    </li>
-                    <li class="py-1">Support Ticket Form:
+                    <li class="py-1">Email: <a class="text-primary cursor-pointer underline"
+                            href="mailto:support@tweakit.today" target="_blank">support@tweakit.today</a>
                     </li>
                 </ul>
             </div>

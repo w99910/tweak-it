@@ -28,10 +28,9 @@ onMounted(() => {
             <header id="header" class="w-full z-20 bg-dark py-4 flex sticky top-0 items-center justify-between">
                 <router-link to="/"><img src="../assets/logo.svg" /></router-link>
                 <nav class="flex items-center gap-x-12">
-                    <a href="#features" class="text-lg">Features</a>
-                    <a href="#pricing" class="text-lg">Pricing</a>
-                    <a href="#frequently-asked-questions" class="text-lg">FAQs</a>
-                    <a class="text-lg">Support</a>
+                    <a href="/#features" class="text-lg">Features</a>
+                    <a href="/#pricing" class="text-lg">Pricing</a>
+                    <a href="/#frequently-asked-questions" class="text-lg">FAQs</a>
                 </nav>
                 <button class="flex items-center px-4 py-2 rounded-md gap-x-2 bg-primary text-text-primary">
                     Get Started

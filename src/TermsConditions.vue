@@ -8,107 +8,99 @@ import Layout from './layout/Layout.vue';
             <h1 class="font-bold text-3xl text-white">Terms & Conditions</h1>
             <p>Effective Date: Dec 2, 2024</p>
             <p>
-                TweakIt (“we”, “our”, or “us”) is committed to protecting your privacy. This Privacy
-                Policy explains how we collect, use, and protect your information when you use our browser extension.
+                Welcome to TweakIt! By downloading, installing, or using this browser extension (the “Service”), you
+                agree to comply with and be bound by these Terms and Conditions. If you do not agree with these terms,
+                you may not use the Service.
             </p>
             <div class="flex flex-col gap-y-2">
-                <h2 class="font-semibold text-xl text-white">1. Information We Collect</h2>
-                <p>We collect and store the following information to provide and improve our services:</p>
-                <ul class="list-inside list-disc">
-                    <li class="py-1">
-                        User Email Address: Used to verify your account status and manage subscription details.
-                    </li>
-                    <li class="py-1">Custom Styles and Settings: Includes any custom background colors, typography
-                        preferences, and
-                        other
-                        settings you configure in the extension.</li>
-                    <li class="py-1">Name for Stripe Customer Object: Used to associate your payment information with
-                        your account
-                        for
-                        subscription purposes.</li>
-                </ul>
-            </div>
-            <div class="flex flex-col gap-y-2">
-                <h2 class="font-semibold text-xl text-white">2. How We Collect Your Information</h2>
-                <p>We use your information for the following purposes:</p>
-                <ul class="list-inside list-disc">
-                    <li class="py-1">
-                        You create an account or subscribe to our services.
-                    </li>
-                    <li class="py-1">You configure custom settings in the extension.</li>
-                    <li class="py-1">You subscribe or make payments using Stripe.</li>
-                </ul>
-            </div>
-            <div class="flex flex-col gap-y-2">
-                <h2 class="font-semibold text-xl text-white">3. How We Use Your Information</h2>
-                <p>We use your information for the following purposes:</p>
-                <ul class="list-inside list-disc">
-                    <li class="py-1">To enable the functionality of the browser extension.</li>
-                    <li class="py-1">To manage your subscription, including billing and account status checks.</li>
-                    <li class="py-1">To store your custom settings for a personalized user experience.</li>
-                </ul>
-            </div>
-            <div class="flex flex-col gap-y-2">
-                <h2 class="font-semibold text-xl text-white">3. How We Use Your Information</h2>
-                <p>We use your information for the following purposes:</p>
-                <ul class="list-inside list-disc">
-                    <li class="py-1">To enable the functionality of the browser extension.</li>
-                    <li class="py-1">To manage your subscription, including billing and account status checks.</li>
-                    <li class="py-1">To store your custom settings for a personalized user experience.</li>
-                </ul>
-            </div>
-            <div class="flex flex-col gap-y-2">
-                <h2 class="font-semibold text-xl text-white">4. Where Your Information Is Stored</h2>
-                <p>Your information is stored securely using:</p>
-                <ul class="list-inside list-disc">
-                    <li class="py-1"><a class="text-primary underline cursor-pointer" target="_blank"
-                            href="https://www.cloudflare.com/privacypolicy/">Cloudflare D1</a>: Our
-                        database provider,
-                        used to store user data including email, custom settings,
-                        and subscription details.</li>
-                </ul>
-            </div>
-            <div class="flex flex-col gap-y-2">
-                <h2 class="font-semibold text-xl text-white">5. Payment Processing</h2>
-                <p>We use Stripe for secure payment processing. Stripe handles your payment information directly, and we
-                    do not store any credit card details. For more information, please review <a
-                        class="text-primary underline cursor-pointer" href="https://stripe.com/privacy"
-                        target="_blank">Stripe’s
-                        Privacy Policy.</a>
+                <h2 class="font-semibold text-xl text-white">1. Acceptance of Terms</h2>
+                <p>By using TweakIt browser extension, you acknowledge that you have read, understood, and agree to
+                    these Terms and Conditions, as well as our Privacy Policy.
                 </p>
             </div>
             <div class="flex flex-col gap-y-2">
-                <h2 class="font-semibold text-xl text-white">6. Data Sharing</h2>
-                <p>We do not sell, trade, or rent your personal information to third parties. We may share your data
-                    only in the following circumstances:
+                <h2 class="font-semibold text-xl text-white">2. Description of Service</h2>
+                <p>"TweakIt" is a browser extension that allows users to customize web applications’ background colors
+                    and
+                    typography. We offer free trial and paid subscription plans for access to all features.</p>
+            </div>
+            <div class="flex flex-col gap-y-2">
+                <h2 class="font-semibold text-xl text-white">3. User Accounts and Subscriptions</h2>
+                <ul class="list-inside list-disc">
+                    <li class="py-1">Account Registration: To use the extension, you must create an account by logging
+                        with your Google account and
+                        provide an email address and name. By registering, you agree that all information you provide is
+                        accurate
+                        and up to date. </li>
+                    <li class="py-1">Subscriptions: We offer monthly and yearly subscription plans through Stripe. You
+                        can find details about pricing and features on our website.
+                    </li>
+                    <li class="py-1">Payment Processing: Payments are securely handled by Stripe. By subscribing, you
+                        agree to <a target="_blank" href="https://stripe.com/privacy"
+                            class="text-primary underline cursor-pointer">Stripe’s Terms of Service and Privacy
+                            Policy.</a> </li>
+                </ul>
+            </div>
+            <div class="flex flex-col gap-y-2">
+                <h2 class="font-semibold text-xl text-white">4. User Responsibilities</h2>
+                <p>By using the Service, you agree that you will: </p>
+                <ul class="list-inside list-disc">
+                    <li class="py-1">Use the Service only for lawful purposes and in compliance with all applicable
+                        laws.</li>
+                    <li class="py-1">Not reverse engineer, copy, modify, or distribute the extension or any part of its
+                        code or functionality.
+                    </li>
+                    <li class="py-1">Be responsible for safeguarding your google account.</li>
+                </ul>
+            </div>
+            <div class="flex flex-col gap-y-2">
+                <h2 class="font-semibold text-xl text-white">5. Intellectual Property</h2>
+                <p>All intellectual property rights in the Service, including but not limited to design, code,
+                    trademarks, and logos, belong to creator of TweakIt browser extension. You are granted a limited,
+                    non-exclusive,
+                    non-transferable license to use the Service for personal purposes.
+                </p>
+            </div>
+            <div class="flex flex-col gap-y-2">
+                <h2 class="font-semibold text-xl text-white">6. Limitations of Liability </h2>
+                <p>To the fullest extent permitted by law, "TweakIt" and its developer(s) are not liable for:
                 </p>
                 <ul class="list-inside list-disc">
-                    <li class="py-1">With Stripe: To process payments.
+                    <li class="py-1">Any direct, indirect, incidental, special, or consequential damages resulting from
+                        your use of the Service.</li>
+                    <li class="py-1">Any issues or damages caused by third-party integrations or websites you use in
+                        conjunction with the Service.
                     </li>
-                    <li class="py-1">As required by law: If required to comply with legal obligations or protect our
-                        rights.
+                    <li class="py-1">Loss of data or settings resulting from errors, misuse, or updates to the Service.
                     </li>
                 </ul>
             </div>
             <div class="flex flex-col gap-y-2">
-                <h2 class="font-semibold text-xl text-white">7. Data Retention</h2>
-                <p>We retain your information for as long as your account is active or as needed to provide you with our
-                    services. You may request the deletion of your data by contacting us at either our support ticket
-                    form or our support email.
-                </p>
+                <h2 class="font-semibold text-xl text-white">7. Refund Policy</h2>
                 <ul class="list-inside list-disc">
-                    <li class="py-1">With Stripe: To process payments.
+                    <li class="py-1">Free Trial (if applicable): If a free trial is offered, you may use it to evaluate
+                        the Service before purchasing a subscription.
                     </li>
-                    <li class="py-1">As required by law: If required to comply with legal obligations or protect our
-                        rights.
+                    <li class="py-1">Subscriptions: Paid subscriptions are non-refundable. If you experience an issue,
+                        please contact us at <a class="text-primary cursor-pointer underline"
+                            href="mailto:support@tweakit.today" target="_blank">support@tweakit.today</a>, and we will
+                        work to resolve it.
                     </li>
                 </ul>
             </div>
             <div class="flex flex-col gap-y-2">
-                <h2 class="font-semibold text-xl text-white">8. Data Security</h2>
-                <p>We take the protection of your data seriously and implement appropriate technical and organizational
-                    measures to safeguard it. However, no method of transmission over the internet or electronic storage
-                    is 100% secure.
+                <h2 class="font-semibold text-xl text-white">8. Termination of Use </h2>
+                <p>We reserve the right to suspend or terminate your account or access to the Service at any time,
+                    without notice, if we believe you have violated these Terms and Conditions or engaged in fraudulent
+                    or abusive activity.
+                </p>
+            </div>
+            <div class="flex flex-col gap-y-2">
+                <h2 class="font-semibold text-xl text-white">9. Changes to the Service or Terms </h2>
+                <p>We reserve the right to modify or discontinue the Service (in whole or in part) or update these Terms
+                    and Conditions at any time. We will notify users of any significant changes by posting updates
+                    within the extension or on our website. Your continued use of the Service after such changes
+                    constitutes your acceptance of the new terms.
                 </p>
             </div>
             <div class="flex flex-col gap-y-2">
@@ -124,21 +116,25 @@ import Layout from './layout/Layout.vue';
                         To withdraw consent to data processing where applicable.
                     </li>
                 </ul>
-                <p>If you wish to exercise your rights, please contact us at [your email address]. </p>
+                <p>If you wish to exercise your rights, please contact us at <a
+                        class="text-primary cursor-pointer underline" href="mailto:support@tweakit.today"
+                        target="_blank">support@tweakit.today</a>. </p>
             </div>
             <div class="flex flex-col gap-y-2">
-                <h2 class="font-semibold text-xl text-white">10. Changes to This Privacy Policy</h2>
-                <p>We may update this Privacy Policy from time to time. We will notify you of any significant changes by
-                    posting the new policy on our website or within the Chrome extension. The “Effective Date” at the
-                    top of this policy will indicate the most recent update.
+                <h2 class="font-semibold text-xl text-white">10. Governing Law </h2>
+                <p>These Terms and Conditions are governed by the laws of Thailand, without regard to its conflict of
+                    laws principles. Any disputes arising from or related to the Service will be resolved in the courts
+                    of Thailand.
                 </p>
             </div>
             <div class="flex flex-col gap-y-2">
-                <h2 class="font-semibold text-xl text-white">11. Contact Us</h2>
-                <p>If you have any questions about this Privacy Policy, please contact us at:
+                <h2 class="font-semibold text-xl text-white">11. Contact Information
+                </h2>
+                <p>If you have any questions, concerns, or issues with the Service, please contact us:
                 </p>
                 <ul class="list-inside list-disc">
-                    <li class="py-1">Email:
+                    <li class="py-1">Email: <a class="text-primary cursor-pointer underline"
+                            href="mailto:support@tweakit.today" target="_blank">support@tweakit.today</a>
                     </li>
                     <li class="py-1">Support Ticket Form:
                     </li>

@@ -13,14 +13,14 @@
                     <div class="flex flex-col gap-y-5">
                         <a href="/#features">Features</a>
                         <a href="/#pricing">Pricing</a>
-                        <p>Creator</p>
+                        <a href="https://www.linkedin.com/in/thomas-brillion/">Creator</a>
                     </div>
                 </div>
                 <div class="flex flex-col gap-y-8 px-8">
                     <h2 class="text-primary text-lg">Support</h2>
                     <div class="flex flex-col gap-y-5">
                         <a href="/#frequently-asked-questions">FAQs</a>
-                        <p>Contact Us</p>
+                        <a href="mailto:support@tweakit.today" target="_blank">Contact Us</a>
                     </div>
                 </div>
                 <div class="flex flex-col gap-y-8 px-8">
@@ -28,8 +28,6 @@
                     <div class="flex flex-col gap-y-5">
                         <RouterLink to="/privacy-policy">Privacy Policy</RouterLink>
                         <RouterLink to="/terms-and-conditions">Terms & Conditions</RouterLink>
-                        <p>Cookies Policy</p>
-                        <p>Refund Policy</p>
                     </div>
                 </div>
             </div>

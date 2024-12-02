@@ -10,22 +10,26 @@ const data = reactive({
 
 const faqs = [{
     question: 'Can I cancel subscription by myself?',
-    answer: "",
+    answer: "You can cancel your subscription in Stripe customer portal. You can access to that portal by opening extension menu, switching to settings page and clicking 'Manage subscription' button.",
 }, {
     question: 'Do you collect my data?',
-    answer: "Pyae Phyo, 27, had travelled from his home in Yangon’s West Hlaing Tharyar Township to Muse in northern Shan State, right on the Chinese border. Once there, he found a broker who helped him land a job in a garment factory in neighbouring southern Yunnan, but he lasted less than two weeks before quitting and returning home.",
+    answer: `TL;DR - We only collect your name and email in order to manage your subscription and account status. You can always turn on/off the "sync settings" feature if you don't want to store your styles in our server. For more information, please consult our <a class="text-primary underline" href="/privacy-policy" target="_blank">privacy_policy</a>.`,
 }, {
     question: 'How can I contact for support',
-    answer: "If you want to customize the strikethrough style, such as changing the color of the line, you can use Tailwind's text color utilities in combination with custom styles.",
+    answer: `Currently, we provide support exclusively via email. For assistance, please contact our support team at <a class="text-primary cursor-pointer underline"
+                            href="mailto:support@tweakit.today" target="_blank">support@tweakit.today</a>.`,
 }, {
     question: 'Why is it so cheap? Is there any catch?',
-    answer: "If you want to customize the strikethrough style, such as changing the color of the line, you can use Tailwind's text color utilities in combination with custom styles.",
+    answer: "There’s no catch. We don’t sell or share your data. While we’d love to offer this service for free, this is the minimum price we can set to cover our costs and keep things running smoothly.",
 }, {
     question: 'Will you add more features later?',
-    answer: "If you want to customize the strikethrough style, such as changing the color of the line, you can use Tailwind's text color utilities in combination with custom styles.",
+    answer: "Of course, we would love to add more features and will try to deliever them as soon as possible.",
 }, {
     question: 'Do you offer a refund?',
-    answer: "If you want to customize the strikethrough style, such as changing the color of the line, you can use Tailwind's text color utilities in combination with custom styles.",
+    answer: `Paid subscriptions are non-refundable. If you experience an issue,
+                        please contact us at <a class="text-primary cursor-pointer underline"
+                            href="mailto:support@tweakit.today" target="_blank">support@tweakit.today</a>, and we will
+                        work to resolve it.`,
 }]
 
 const toggleQuestion = function (index: number) {
@@ -54,8 +58,7 @@ const toggleQuestion = function (index: number) {
                         v-html="chevronRight"></div>
                 </div>
                 <div style="transition: all 0.2s ease-out; height: 0px;"
-                    class="answer mt-4 overflow-hidden text-gray-300">
-                    {{ faq.answer }}
+                    class="answer mt-4 overflow-hidden text-gray-300" v-html="faq.answer">
                 </div>
             </div>
         </div>
