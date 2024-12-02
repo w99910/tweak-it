@@ -8,9 +8,9 @@ import { lightning } from '../../icons';
             <div v-html="lightning" class="w-6 h-6 text-primary"></div>
             <h3 class="text-xl gradient-text font-semibold"> Preset Styles</h3>
         </header>
-        <p>Reduce costs, grow revenue, and run your business more efficiently on a fully integrated platform. Use Stripe
-            to handle all of your payments-related needs, manage revenue operations, and launch (or invent) new business
-            models.</p>
+        <p>Explore the preset styles or create your own custom looks for your favorite website. Once you’re happy, let
+            <span class="text-primary">Tweak It</span> handle the styling automatically every time you visit!
+        </p>
         <video class="mt-8 rounded-lg opacity-80" muted controls loop playsinline src="../../assets/preset.mp4">
 
         </video>

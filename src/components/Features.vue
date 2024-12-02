@@ -2,6 +2,7 @@
 import PresetStyles from './features/PresetStyles.vue';
 import CustomStyle from './features/CustomStyle.vue';
 import OtherFeatures from './features/OtherFeatures.vue';
+import MyStyle from './features/Style.vue';
 </script>
 
 <template>
@@ -10,6 +11,7 @@ import OtherFeatures from './features/OtherFeatures.vue';
         <h2 class="font-semibold text-3xl gradient-text">Features</h2>
         <p class="text-text-gray mt-4">Tweak your style and ease your readability</p>
         <div class="flex items-center w-full flex-col gap-y-8">
+            <my-style />
             <preset-styles />
             <custom-style />
             <other-features />
