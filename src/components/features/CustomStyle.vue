@@ -11,9 +11,9 @@ import { lightning } from '../../icons';
         <p>Reduce costs, grow revenue, and run your business more efficiently on a fully integrated platform. Use Stripe
             to handle all of your payments-related needs, manage revenue operations, and launch (or invent) new business
             models.</p>
-        <div class="w-full mt-4 h-[60vh] bg-gray-800">
+        <video class="mt-8 rounded-lg opacity-80" muted autoplay loop playsinline src="../../assets/custom.mp4">
 
-        </div>
+        </video>
     </section>
 </template>
 

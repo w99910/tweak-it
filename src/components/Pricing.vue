@@ -26,35 +26,35 @@ import { tick, arrowRight } from '../icons';
             <div class="flex flex-col w-1/2 p-8 gap-y-8">
                 <div class="flex items-center gap-x-6">
                     <div v-html="tick" class="w-6 h-6"></div>
-                    <p class="text-lg">No Credit Card Required</p>
+                    <p class="text-lg">No Credit Card Required For Trial Period</p>
                 </div>
                 <div class="flex items-center gap-x-6">
                     <div v-html="tick" class="w-6 h-6"></div>
-                    <p class="text-lg">No Credit Card Required</p>
+                    <p class="text-lg">Preset Styles</p>
                 </div>
                 <div class="flex items-center gap-x-6">
                     <div v-html="tick" class="w-6 h-6"></div>
-                    <p class="text-lg">No Credit Card Required</p>
+                    <p class="text-lg">Custom Style</p>
                 </div>
                 <div class="flex items-center gap-x-6">
                     <div v-html="tick" class="w-6 h-6"></div>
-                    <p class="text-lg">No Credit Card Required</p>
+                    <p class="text-lg">Style per website / Global Style</p>
                 </div>
                 <div class="flex items-center gap-x-6">
                     <div v-html="tick" class="w-6 h-6"></div>
-                    <p class="text-lg">No Credit Card Required</p>
+                    <p class="text-lg">Sync settings across your devices</p>
                 </div>
                 <div class="flex items-center gap-x-6">
                     <div v-html="tick" class="w-6 h-6"></div>
-                    <p class="text-lg">No Credit Card Required</p>
+                    <p class="text-lg">Auto-apply style</p>
                 </div>
                 <div class="flex items-center gap-x-6">
                     <div v-html="tick" class="w-6 h-6"></div>
-                    <p class="text-lg">No Credit Card Required</p>
+                    <p class="text-lg">Email Support</p>
                 </div>
                 <div class="flex items-center gap-x-6">
                     <div v-html="tick" class="w-6 h-6"></div>
-                    <p class="text-lg">No Credit Card Required</p>
+                    <p class="text-lg">Access to future updates</p>
                 </div>
             </div>
         </div>

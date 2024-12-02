@@ -11,23 +11,23 @@
                 <div class="flex flex-col gap-y-8 px-8">
                     <h2 class="text-primary text-lg">Product</h2>
                     <div class="flex flex-col gap-y-5">
-                        <p>Features</p>
-                        <p>Pricing</p>
+                        <a href="/#features">Features</a>
+                        <a href="/#pricing">Pricing</a>
                         <p>Creator</p>
                     </div>
                 </div>
                 <div class="flex flex-col gap-y-8 px-8">
                     <h2 class="text-primary text-lg">Support</h2>
                     <div class="flex flex-col gap-y-5">
-                        <p>FAQs</p>
+                        <a href="/#frequently-asked-questions">FAQs</a>
                         <p>Contact Us</p>
                     </div>
                 </div>
                 <div class="flex flex-col gap-y-8 px-8">
                     <h2 class="text-primary text-lg">Legal</h2>
                     <div class="flex flex-col gap-y-5">
-                        <p>Privacy Policy</p>
-                        <p>Terms & Conditions</p>
+                        <RouterLink to="/privacy-policy">Privacy Policy</RouterLink>
+                        <RouterLink to="/terms-and-conditions">Terms & Conditions</RouterLink>
                         <p>Cookies Policy</p>
                         <p>Refund Policy</p>
                     </div>

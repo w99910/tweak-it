@@ -10,7 +10,7 @@ const data = reactive({
 
 const faqs = [{
     question: 'Can I cancel subscription by myself?',
-    answer: "If you want to customize the strikethrough style, such as changing the color of the line, you can use Tailwind's text color utilities in combination with custom styles.",
+    answer: "",
 }, {
     question: 'Do you collect my data?',
     answer: "Pyae Phyo, 27, had travelled from his home in Yangon’s West Hlaing Tharyar Township to Muse in northern Shan State, right on the Chinese border. Once there, he found a broker who helped him land a job in a garment factory in neighbouring southern Yunnan, but he lasted less than two weeks before quitting and returning home.",

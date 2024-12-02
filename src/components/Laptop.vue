@@ -11,13 +11,13 @@ import { onMounted, ref } from "vue";
 import laptopAsset from '../assets/laptop.glb?url';
 import keyboardTextureUrl from '../assets/keyboard-c.png?url';
 import baseTextureUrl from '../assets/new_texture.png?url';
-import videoUrl from '../assets/video.mp4?url';
+import browseVideoUrl from '../assets/browse.mp4?url';
 import anime from 'animejs'
 
 
 const containerRef = ref(null)
 
-const init = () => {
+const init = async () => {
     const scene = new THREE.Scene();
     const container = containerRef.value! as HTMLElement;
     const width = container.offsetWidth;
@@ -102,21 +102,26 @@ const init = () => {
     composer.addPass(contrastPass);
 
     const video = document.createElement('video');
-    video.src = videoUrl;
+
+    video.src = browseVideoUrl;
     video.loop = true;
     video.muted = true;
     video.autoplay = true;
+    // video.crossOrigin = "anonymous"
+    // video.setAttribute('crossorigin', 'http://localhost:5173/');
     video.playsInline = true; // Ensures it works well on mobile devices
     video.load();
 
-    video.play();
+    await video.play();
 
     // Create a VideoTexture
     const videoTexture = new THREE.VideoTexture(video);
     videoTexture.minFilter = THREE.LinearFilter; // Adjust for performance
     videoTexture.magFilter = THREE.LinearFilter;
     videoTexture.format = THREE.RGBFormat;
-    videoTexture.flipY = true;
+    videoTexture.flipY = false;
+    // videoTexture.needsUpdate = true;
+
 
     const screenMaterial = new THREE.MeshBasicMaterial({
         map: videoTexture,
@@ -195,6 +200,7 @@ const init = () => {
     const render = () => {
         // controls.update();
         window.requestAnimationFrame(render);
+
 
         composer.render();
     }
