@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import * as THREE from "three";
-import * as dat from "dat.gui";
-import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
-import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
+// import * as dat from "dat.gui";
+// import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
+import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
 import { EffectComposer } from 'three/examples/jsm/postprocessing/EffectComposer.js';
 import { RenderPass } from 'three/examples/jsm/postprocessing/RenderPass.js';
 import { ShaderPass } from 'three/examples/jsm/postprocessing/ShaderPass.js';
@@ -45,11 +45,11 @@ const init = async () => {
     scene.add(camera)
 
 
-    function logCameraDetails() {
-        console.log('Camera Position:', camera.position);
-        console.log('Camera Rotation (Euler):', camera.rotation); // Euler angles (in radians)
-        console.log('Camera Quaternion:', camera.quaternion);    // Quaternion representation
-    }
+    // function logCameraDetails() {
+    //     console.log('Camera Position:', camera.position);
+    //     console.log('Camera Rotation (Euler):', camera.rotation); // Euler angles (in radians)
+    //     console.log('Camera Quaternion:', camera.quaternion);    // Quaternion representation
+    // }
 
     // const controls = new OrbitControls(camera, renderer.domElement);
     // controls.enableDamping = true;
@@ -131,9 +131,9 @@ const init = async () => {
 
     let laptopGLB: any = null;
     // const baseTexture = 
-    gltfLoader.load(laptopAsset, (laptop) => {
+    gltfLoader.load(laptopAsset, (laptop: any) => {
         console.log(laptop)
-        laptop.scene?.traverse((child) => {
+        laptop.scene?.traverse((child: any) => {
             console.log(child)
             if (['lid', 'base'].includes(child.name)) {
                 // const material = new THREE.MeshBasicMaterial({
@@ -169,7 +169,7 @@ const init = async () => {
     let targetRotationY = 0;
     let targetRotationX = 0;
 
-    let animeInstance: any;
+    // let animeInstance: any;
 
     window.addEventListener('mousemove', (event) => {
         // Normalize mouse position to -1 to 1
@@ -182,7 +182,7 @@ const init = async () => {
 
         // if (animeInstance) animeInstance.pause();
 
-        animeInstance = anime({
+        anime({
             targets: laptopGLB.rotation,
             x: targetRotationX, // Animate Z rotation to target
             y: targetRotationY, // Animate Z rotation to target

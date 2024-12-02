@@ -1,12 +1,6 @@
 <script setup lang="ts">
 
-import { arrowRight, chevronRight } from '../icons';
-
-import { reactive } from 'vue';
-
-const data = reactive({
-    openedIndexes: []
-});
+import { chevronRight } from '../icons';
 
 const faqs = [{
     question: 'Can I cancel subscription by myself?',

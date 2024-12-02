@@ -1,4 +1,4 @@
-import { createMemoryHistory, createWebHistory, createRouter } from 'vue-router'
+import { createWebHistory, createRouter } from 'vue-router'
 
 import PrivacyPolicy from './PrivacyPolicy.vue'
 import Home from './Home.vue'

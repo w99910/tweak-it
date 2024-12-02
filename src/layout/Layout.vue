@@ -5,8 +5,8 @@ import { reactive } from 'vue';
 import { onMounted } from 'vue';
 
 const data = reactive({
-    width: null,
-    height: null,
+    width: 0,
+    height: 0,
 })
 
 data.width = window.innerWidth;

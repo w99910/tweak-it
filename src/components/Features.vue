@@ -1,4 +1,4 @@
-<script setup la components: { OtherFeatures },ng="ts">
+<script setup lang="ts">
 import PresetStyles from './features/PresetStyles.vue';
 import CustomStyle from './features/CustomStyle.vue';
 import OtherFeatures from './features/OtherFeatures.vue';
