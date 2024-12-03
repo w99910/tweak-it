@@ -41,13 +41,13 @@ const toggleQuestion = function (index: number) {
 <template>
     <section id="frequently-asked-questions"
         class="flex border-t border-dashed flex-col z-10 w-full items-center py-[10vh]">
-        <h2 class="font-semibold text-3xl gradient-text mb-8">Frequently Asked Questions</h2>
+        <h2 class="font-semibold text-2xl sm:text-3xl gradient-text mb-8">Frequently Asked Questions</h2>
         <div class="w-11/12 flex flex-col">
             <div @click="toggleQuestion(i)"
                 class="overflow-hidden faq cursor-pointer py-6 border-b border-gray-400 w-full flex flex-col"
                 v-for="(faq, i) in faqs" :key="i">
                 <div class="flex items-center w-full justify-between">
-                    <h2 class="w-10/12 font-medium text-xl">{{ faq.question }}</h2>
+                    <h2 class="w-10/12 font-medium text-lg sm:text-xl">{{ faq.question }}</h2>
                     <div style="transition: all 0.2s ease-out;" class="w-6 h-6 chevron-right-icon"
                         v-html="chevronRight"></div>
                 </div>

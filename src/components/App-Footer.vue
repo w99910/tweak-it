@@ -7,25 +7,25 @@
         <div class="w-full flex flex-col items-center px-4 sm:w-10/12 md:w-9/12 lg:w-8/12 2xl:w-7/12">
             <img alt="logo" src="../assets/logo.svg">
             <h2 class="text-text-gray font-semibold text-lg">Ultimate Web Styler Extension</h2>
-            <div class="flex w-full justify-center gap-x-24 mt-12">
-                <div class="flex flex-col gap-y-8 px-8">
+            <div class="flex sm:flex-row flex-col sm:gap-y-0 gap-y-12 w-full justify-center gap-x-24 mt-12">
+                <div class="flex flex-col gap-y-4 sm:gap-y-8 px-8">
                     <h2 class="text-primary text-lg">Product</h2>
-                    <div class="flex flex-col gap-y-5">
+                    <div class="flex flex-col gap-y-3 sm:gap-y-5">
                         <a href="/#features">Features</a>
                         <a href="/#pricing">Pricing</a>
                         <a href="https://www.linkedin.com/in/thomas-brillion/">Creator</a>
                     </div>
                 </div>
-                <div class="flex flex-col gap-y-8 px-8">
+                <div class="flex flex-col gap-y-4 sm:gap-y-8 px-8">
                     <h2 class="text-primary text-lg">Support</h2>
-                    <div class="flex flex-col gap-y-5">
+                    <div class="flex flex-col gap-y-3 sm:gap-y-5">
                         <a href="/#frequently-asked-questions">FAQs</a>
                         <a href="mailto:support@tweakit.today" target="_blank">Contact Us</a>
                     </div>
                 </div>
-                <div class="flex flex-col gap-y-8 px-8">
+                <div class="flex flex-col gap-y-4 sm:gap-y-8 px-8">
                     <h2 class="text-primary text-lg">Legal</h2>
-                    <div class="flex flex-col gap-y-5">
+                    <div class="flex flex-col gap-y-3 sm:gap-y-5">
                         <RouterLink to="/privacy-policy">Privacy Policy</RouterLink>
                         <RouterLink to="/terms-and-conditions">Terms & Conditions</RouterLink>
                     </div>
