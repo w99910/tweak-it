@@ -84,7 +84,13 @@ const init = async () => {
     video.playsInline = true; // Ensures it works well on mobile devices
     video.load();
 
-    video.play();
+    try {
+        video.addEventListener('canplay', () => {
+            video.play();
+        })
+    } catch (e) {
+
+    }
 
     // Create a VideoTexture
     const videoTexture = new THREE.VideoTexture(video);
@@ -106,9 +112,7 @@ const init = async () => {
     let laptopGLB: any = null;
     // const baseTexture = 
     gltfLoader.load(laptopAsset, (laptop: any) => {
-        console.log(laptop)
         laptop.scene?.traverse((child: any) => {
-            console.log(child)
             if (['lid', 'base'].includes(child.name)) {
                 // const material = new THREE.MeshBasicMaterial({
                 //     map: 
@@ -145,25 +149,45 @@ const init = async () => {
 
     // let animeInstance: any;
 
-    window.addEventListener('mousemove', (event) => {
-        // Normalize mouse position to -1 to 1
-        mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
-        mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+    const maxTurnRate = Math.PI / 8;
 
-        const maxTurnRate = Math.PI / 8;
+    function handleMove(event: any) {
+        if (!laptopGLB) return;
+
+        let clientX, clientY;
+
+        // For mousemove, use event.clientX and event.clientY
+        if (event.type === 'mousemove') {
+            clientX = event.clientX;
+            clientY = event.clientY;
+        }
+        // For touchmove, use the first touch point
+        else if (event.type === 'touchmove') {
+            event.preventDefault(); // Prevent the default scroll behavior
+            clientX = event.touches[0].clientX;
+            clientY = event.touches[0].clientY;
+        }
+
+        // Normalize touch/mouse position to -1 to 1 range
+        mouse.x = (clientX / window.innerWidth) * 2 - 1;
+        mouse.y = -(clientY / window.innerHeight) * 2 + 1;
+
+        // Map mouse/touch position to rotation
         targetRotationY = mouse.x * maxTurnRate;
         targetRotationX = mouse.y * Math.PI / 16;
 
-        // if (animeInstance) animeInstance.pause();
-
+        // Animate rotation using Anime.js
         anime({
             targets: laptopGLB.rotation,
-            x: targetRotationX, // Animate Z rotation to target
-            y: targetRotationY, // Animate Z rotation to target
+            x: targetRotationX,
+            y: targetRotationY,
             duration: 500,      // Smooth transition duration (ms)
             easing: 'easeOutQuad' // Easing function for a smooth effect
         });
-    });
+    }
+
+    window.addEventListener('mousemove', handleMove);
+    window.addEventListener('touchmove', handleMove);
 
     window.addEventListener('resize', () => {
         renderer.setSize(window.innerWidth, window.innerHeight);
@@ -187,7 +211,7 @@ onMounted(() => {
 })
 </script>
 <template>
-    <div ref="containerRef" class="w-screen z-10 h-[70vh] mt-10">
+    <div ref="containerRef" class="w-screen z-10 h-[60vh] sm:h-[70vh] mt-10">
 
     </div>
 </template>

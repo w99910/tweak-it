@@ -5,7 +5,7 @@ import { lightning } from '../../icons';
 <template>
     <div class="flex w-full flex-wrap gap-y-24">
         <div class="w-full sm:w-1/2 px-4 sm:px-8 gap-y-8 flex flex-col">
-            <header class="flex items-center gap-x-8">
+            <header class="flex items-center gap-x-6 md:gap-x-8">
                 <div v-html="lightning" class="w-6 h-6 text-primary"></div>
                 <h3 class="text-xl gradient-text font-semibold"> Sync Settings Across All Devices </h3>
             </header>
@@ -15,7 +15,7 @@ import { lightning } from '../../icons';
             </p>
         </div>
         <div class="w-full sm:w-1/2 px-4 sm:px-8 gap-y-8 flex flex-col">
-            <header class="flex items-center gap-x-8">
+            <header class="flex items-center gap-x-6 md:gap-x-8">
                 <div v-html="lightning" class="w-6 h-6 text-primary"></div>
                 <h3 class="text-xl gradient-text font-semibold"> Style Per Website / Global Style </h3>
             </header>
@@ -25,7 +25,7 @@ import { lightning } from '../../icons';
             </p>
         </div>
         <div class="w-full sm:w-1/2 px-4 sm:px-8 gap-y-8 flex flex-col">
-            <header class="flex items-center gap-x-8">
+            <header class="flex items-center gap-x-6 md:gap-x-8">
                 <div v-html="lightning" class="w-6 h-6 text-primary"></div>
                 <h3 class="text-xl gradient-text font-semibold"> Create Your Own Custom Style </h3>
             </header>
@@ -35,7 +35,7 @@ import { lightning } from '../../icons';
             </p>
         </div>
         <div class="w-full sm:w-1/2 px-4 sm:px-8 gap-y-8 flex flex-col">
-            <header class="flex items-center gap-x-8">
+            <header class="flex items-center gap-x-6 md:gap-x-8">
                 <div v-html="lightning" class="w-6 h-6 text-primary"></div>
                 <h3 class="text-xl gradient-text font-semibold"> Intelligent Color Adjustment </h3>
             </header>

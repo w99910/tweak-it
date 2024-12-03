@@ -8,7 +8,7 @@ import Laptop from './Laptop.vue';
         <h1 class="font-bold text-5xl">Ultimate Web Styler Extension</h1>
         <h3 class="font-medium text-lg mt-5 text-text-gray">Personalize Every Website Effortlessly with This Powerful
             Tool</h3>
-        <div class="flex items-center gap-x-8 mt-10 justify-center">
+        <div class="flex items-center gap-x-4 md:gap-x-8 mt-10 justify-center">
             <span class="flex w-6 h-6 text-primary" v-html="star"></span>
             <p>
                 Limited-Time Offer:
