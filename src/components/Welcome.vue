@@ -12,7 +12,7 @@ import Laptop from './Laptop.vue';
             <span class="flex w-6 h-6 text-primary" v-html="star"></span>
             <p>
                 Limited-Time Offer:
-                <span class="text-primary"> Join the first 50 users </span> and
+                <span class="text-primary"> Join the first 100 users </span> and
                 <span class="text-primary">get 50% discount for your first 12 months!</span>
                 <br>
                 Don't miss out, the price increases to $3.99 after.

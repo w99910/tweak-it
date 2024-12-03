@@ -10,9 +10,8 @@ import { lightning } from '../../icons';
                 <h3 class="text-xl gradient-text font-semibold"> Sync Settings Across All Devices </h3>
             </header>
             <p>
-                Reduce costs, grow revenue, and run your business more efficiently on a fully integrated platform. Use
-                Stripe to handle all of your payments-related needs, manage revenue operations, and launch (or invent)
-                new business models.
+                Keep your preferences consistent no matter where you go. Sync your settings across all devices for a
+                seamless and personalized experience everywhere.
             </p>
         </div>
         <div class="w-full sm:w-1/2 px-4 sm:px-8 gap-y-8 flex flex-col">
@@ -21,9 +20,8 @@ import { lightning } from '../../icons';
                 <h3 class="text-xl gradient-text font-semibold"> Style Per Website / Global Style </h3>
             </header>
             <p>
-                Reduce costs, grow revenue, and run your business more efficiently on a fully integrated platform. Use
-                Stripe to handle all of your payments-related needs, manage revenue operations, and launch (or invent)
-                new business models.
+                Personalize your browsing by setting unique styles for each website or create a unified look across all
+                sites with a single global style.
             </p>
         </div>
         <div class="w-full sm:w-1/2 px-4 sm:px-8 gap-y-8 flex flex-col">
@@ -32,9 +30,8 @@ import { lightning } from '../../icons';
                 <h3 class="text-xl gradient-text font-semibold"> Create Your Own Custom Style </h3>
             </header>
             <p>
-                Reduce costs, grow revenue, and run your business more efficiently on a fully integrated platform. Use
-                Stripe to handle all of your payments-related needs, manage revenue operations, and launch (or invent)
-                new business models.
+                Unleash your creativity and design the perfect look for your favorite websites. Customize everything
+                from colors to fonts, and save your unique styles to use anytime!
             </p>
         </div>
         <div class="w-full sm:w-1/2 px-4 sm:px-8 gap-y-8 flex flex-col">
@@ -43,9 +40,8 @@ import { lightning } from '../../icons';
                 <h3 class="text-xl gradient-text font-semibold"> Intelligent Color Adjustment </h3>
             </header>
             <p>
-                Reduce costs, grow revenue, and run your business more efficiently on a fully integrated platform. Use
-                Stripe to handle all of your payments-related needs, manage revenue operations, and launch (or invent)
-                new business models.
+                Intelligent Color Adjustment ensures your customizations blend seamlessly with the website's design by
+                automatically adjusting colors for optimal contrast and preserving the overall aesthetic.
             </p>
         </div>
     </div>

@@ -12,6 +12,7 @@
                     <h2 class="text-primary text-lg">Product</h2>
                     <div class="flex flex-col gap-y-3 sm:gap-y-5">
                         <a href="/#features">Features</a>
+                        <a href="/#why-us">Why Us?</a>
                         <a href="/#pricing">Pricing</a>
                         <a href="https://www.linkedin.com/in/thomas-brillion/">Creator</a>
                     </div>

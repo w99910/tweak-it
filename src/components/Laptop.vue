@@ -38,8 +38,6 @@ const init = async () => {
     );
     gltfLoader.setDRACOLoader(dracoLoader);
     const camera = new THREE.PerspectiveCamera(45, width / height, 0.1, 100)
-
-
     // camera.setRotationFromQuaternion(new THREE.Quaternion(-0.2626754678891436, -0.0023676666676194667, -0.0006445643264447475, 0.9648811207918827))
     // camera.position.set(0.14515455360508775, 3.6927556297910966, 4.324341071962077)
     camera.position.set(0, 4, 5);

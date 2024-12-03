@@ -47,6 +47,10 @@ import { tick, arrowRight } from '../icons';
                 </div>
                 <div class="flex items-center gap-x-4 sm:gap-x-6">
                     <div v-html="tick" class="w-6 h-6"></div>
+                    <p class="">Intelligent Color Adjustment</p>
+                </div>
+                <div class="flex items-center gap-x-4 sm:gap-x-6">
+                    <div v-html="tick" class="w-6 h-6"></div>
                     <p class="">Sync settings across your devices</p>
                 </div>
                 <div class="flex items-center gap-x-4 sm:gap-x-6">

@@ -136,8 +136,6 @@ import Layout from './layout/Layout.vue';
                     <li class="py-1">Email: <a class="text-primary cursor-pointer underline"
                             href="mailto:support@tweakit.today" target="_blank">support@tweakit.today</a>
                     </li>
-                    <li class="py-1">Support Ticket Form:
-                    </li>
                 </ul>
             </div>
         </div>

@@ -3,6 +3,7 @@ import Layout from './layout/Layout.vue';
 
 import Welcome from './components/Welcome.vue';
 import Features from './components/Features.vue';
+import WhyUs from './components/WhyUs.vue';
 import Pricing from './components/Pricing.vue';
 import Faq from './components/FAQ.vue';
 </script>
@@ -11,6 +12,7 @@ import Faq from './components/FAQ.vue';
     <layout>
         <welcome />
         <features />
+        <why-us />
         <pricing />
         <faq />
     </layout>

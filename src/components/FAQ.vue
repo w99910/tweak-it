@@ -13,17 +13,14 @@ const faqs = [{
     answer: `Currently, we provide support exclusively via email. For assistance, please contact our support team at <a class="text-primary cursor-pointer underline"
                             href="mailto:support@tweakit.today" target="_blank">support@tweakit.today</a>.`,
 }, {
-    question: 'Why is it so cheap? Is there any catch?',
-    answer: "There’s no catch. We don’t sell or share your data. While we’d love to offer this service for free, this is the minimum price we can set to cover our costs and keep things running smoothly.",
-}, {
     question: 'Will you add more features later?',
     answer: "Of course, we would love to add more features and will try to deliever them as soon as possible.",
 }, {
     question: 'Do you offer a refund?',
-    answer: `Paid subscriptions are non-refundable. If you experience an issue,
-                        please contact us at <a class="text-primary cursor-pointer underline"
-                            href="mailto:support@tweakit.today" target="_blank">support@tweakit.today</a>, and we will
-                        work to resolve it.`,
+    answer: `Paid subscriptions are non-refundable. If you experience an issue, please contact us at <a class="text-primary cursor-pointer underline" href="mailto:support@tweakit.today" target="_blank">support@tweakit.today</a>, and we will work to resolve it.`,
+}, {
+    question: 'Does it work on my browser?',
+    answer: `Currently, we only support the Chrome Desktop version as Chrome does not permit extensions to run on mobile browsers. We plan to expand support for Desktop versions of Brave and Opera browsers.`
 }]
 
 const toggleQuestion = function (index: number) {

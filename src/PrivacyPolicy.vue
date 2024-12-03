@@ -30,7 +30,7 @@ import Layout from './layout/Layout.vue';
             </div>
             <div class="flex flex-col gap-y-2">
                 <h2 class="font-semibold text-xl text-white">2. How We Collect Your Information</h2>
-                <p>We use your information for the following purposes:</p>
+                <p>We collect the information you provide when:</p>
                 <ul class="list-inside list-disc">
                     <li class="py-1">
                         You create an account or subscribe to our services.
@@ -46,15 +46,7 @@ import Layout from './layout/Layout.vue';
                     <li class="py-1">To enable the functionality of the browser extension.</li>
                     <li class="py-1">To manage your subscription, including billing and account status checks.</li>
                     <li class="py-1">To store your custom settings for a personalized user experience.</li>
-                </ul>
-            </div>
-            <div class="flex flex-col gap-y-2">
-                <h2 class="font-semibold text-xl text-white">3. How We Use Your Information</h2>
-                <p>We use your information for the following purposes:</p>
-                <ul class="list-inside list-disc">
-                    <li class="py-1">To enable the functionality of the browser extension.</li>
-                    <li class="py-1">To manage your subscription, including billing and account status checks.</li>
-                    <li class="py-1">To store your custom settings for a personalized user experience.</li>
+                    <li class="py-1">To send newsletter about updates, blogs and deals about the extension.</li>
                 </ul>
             </div>
             <div class="flex flex-col gap-y-2">
@@ -119,7 +111,7 @@ import Layout from './layout/Layout.vue';
                 <ul class="list-inside list-disc">
                     <li class="py-1">To access, update, or delete your personal data.
                     </li>
-                    <li class="py-1">To opt out of marketing communications.
+                    <li class="py-1">To opt out of marketing communications and newsletters
                     </li>
                     <li class="py-1">
                         To withdraw consent to data processing where applicable.
