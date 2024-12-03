@@ -3,9 +3,6 @@ import * as THREE from "three";
 // import * as dat from "dat.gui";
 // import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
-import { EffectComposer } from 'three/examples/jsm/postprocessing/EffectComposer.js';
-import { RenderPass } from 'three/examples/jsm/postprocessing/RenderPass.js';
-import { ShaderPass } from 'three/examples/jsm/postprocessing/ShaderPass.js';
 import { DRACOLoader } from "three/examples/jsm/loaders/DRACOLoader.js";
 import { onMounted, ref } from "vue";
 import laptopAsset from '../assets/laptop.glb?url';
@@ -13,6 +10,7 @@ import keyboardTextureUrl from '../assets/keyboard-c.png?url';
 import baseTextureUrl from '../assets/new_texture.png?url';
 import browseVideoUrl from '../assets/browse.mp4?url';
 import anime from 'animejs'
+import { Vector3 } from "three";
 
 
 const containerRef = ref(null)
@@ -24,10 +22,12 @@ const init = async () => {
     const height = container.offsetHeight;
     const renderer = new THREE.WebGLRenderer({
         antialias: true,
-        alpha: true
+        alpha: true,
+        precision: 'highp'
     });
     renderer.setClearColor(0x000000, 0);
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 1));
+    // renderer.setPixelRatio(window.devicePixelRatio);
     renderer.setSize(width, height);
 
     container.appendChild(renderer.domElement);
@@ -40,8 +40,10 @@ const init = async () => {
     const camera = new THREE.PerspectiveCamera(45, width / height, 0.1, 100)
 
 
-    camera.setRotationFromQuaternion(new THREE.Quaternion(-0.2626754678891436, -0.0023676666676194667, -0.0006445643264447475, 0.9648811207918827))
-    camera.position.set(0.14515455360508775, 3.6927556297910966, 4.324341071962077)
+    // camera.setRotationFromQuaternion(new THREE.Quaternion(-0.2626754678891436, -0.0023676666676194667, -0.0006445643264447475, 0.9648811207918827))
+    // camera.position.set(0.14515455360508775, 3.6927556297910966, 4.324341071962077)
+    camera.position.set(0, 4, 5);
+    camera.lookAt(new Vector3(0, 1, 0))
     scene.add(camera)
 
 
@@ -66,40 +68,11 @@ const init = async () => {
     keyboardTexture.flipY = false;
     baseTexture.colorSpace = THREE.SRGBColorSpace;
     keyboardTexture.colorSpace = THREE.SRGBColorSpace;
+    keyboardTexture.anisotropy = renderer.capabilities.getMaxAnisotropy()
+    baseTexture.anisotropy = renderer.capabilities.getMaxAnisotropy()
 
     const baseMaterial = new THREE.MeshBasicMaterial({ map: baseTexture, reflectivity: 0 })
-    const keyboardMaterial = new THREE.MeshBasicMaterial({ map: keyboardTexture })
-
-    const composer = new EffectComposer(renderer);
-    composer.addPass(new RenderPass(scene, camera));
-
-    // Contrast shader
-    const contrastShader = {
-        uniforms: {
-            tDiffuse: { value: null },
-            contrast: { value: 1.5 }, // Increase for higher contrast
-        },
-        vertexShader: `
-        varying vec2 vUv;
-        void main() {
-            vUv = uv;
-            gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
-        }
-    `,
-        fragmentShader: `
-        uniform sampler2D tDiffuse;
-        uniform float contrast;
-        varying vec2 vUv;
-        void main() {
-            vec4 color = texture2D(tDiffuse, vUv);
-            color.rgb = (color.rgb - 0.001) * contrast + 0.001; // Contrast adjustment
-            gl_FragColor = color;
-        }
-    `,
-    };
-
-    const contrastPass = new ShaderPass(contrastShader);
-    composer.addPass(contrastPass);
+    const keyboardMaterial = new THREE.MeshBasicMaterial({ map: keyboardTexture, reflectivity: 0 })
 
     const video = document.createElement('video');
 
@@ -107,20 +80,23 @@ const init = async () => {
     video.loop = true;
     video.muted = true;
     video.autoplay = true;
+    video.setAttribute('webkit-playsinline', '');
     // video.crossOrigin = "anonymous"
     // video.setAttribute('crossorigin', 'http://localhost:5173/');
     video.playsInline = true; // Ensures it works well on mobile devices
     video.load();
 
-    await video.play();
+    video.play();
 
     // Create a VideoTexture
     const videoTexture = new THREE.VideoTexture(video);
-    videoTexture.minFilter = THREE.LinearFilter; // Adjust for performance
-    videoTexture.magFilter = THREE.LinearFilter;
-    videoTexture.format = THREE.RGBFormat;
+    // videoTexture.minFilter = THREE.LinearFilter; // Adjust for performance
+    // videoTexture.magFilter = THREE.LinearFilter;
+    videoTexture.anisotropy = renderer.capabilities.getMaxAnisotropy()
+    // videoTexture.format = THREE.RGBFormat;
+    videoTexture.colorSpace = THREE.SRGBColorSpace;
     videoTexture.flipY = false;
-    // videoTexture.needsUpdate = true;
+    videoTexture.needsUpdate = true;
 
 
     const screenMaterial = new THREE.MeshBasicMaterial({
@@ -202,7 +178,7 @@ const init = async () => {
         window.requestAnimationFrame(render);
 
 
-        composer.render();
+        renderer.render(scene, camera)
     }
 
     render();
@@ -213,7 +189,7 @@ onMounted(() => {
 })
 </script>
 <template>
-    <div ref="containerRef" class="w-screen h-[70vh] mt-10">
+    <div ref="containerRef" class="w-screen z-10 h-[70vh] mt-10">
 
     </div>
 </template>
