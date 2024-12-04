@@ -27,7 +27,11 @@ onMounted(() => {
         :style="{ width: data.width + 'px', height: data.height + 'px' }">
         <div class="w-full sm:bg-inherit bg-dark px-4 sm:w-10/12 md:w-9/12 lg:w-8/12 relative 2xl:w-7/12 flex flex-col">
             <header id="header" class="w-full z-20 bg-dark py-4 flex sticky top-0 items-center justify-between">
-                <router-link to="/"><img src="../assets/logo.svg" /></router-link>
+                <router-link to="/">
+                    <div class="flex items-center gap-x-2">
+                        <img src="../assets/logo.svg" />
+                    </div>
+                </router-link>
                 <nav v-show="data.width > 640 || data.showNav"
                     :style="{ width: data.width > 640 ? 'auto' : data.width + 'px', height: data.width > 640 ? 'auto' : data.height + 'px' }"
                     class="flex sm:flex-row flex-col z-10 justify-center sm:bg-none bg-nav-gradient sm:justify-start fixed  top-0 left-0 sm:relative gap-y-8 items-center sm:gap-x-12">
