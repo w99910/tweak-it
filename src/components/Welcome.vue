@@ -18,12 +18,14 @@ import Laptop from './Laptop.vue';
                 Don't miss out, the price increases to $3.99 after.
             </p>
         </div>
-        <button class="px-8 flex items-center gap-x-2 py-4 rounded-lg bg-primary text-text-primary mt-12">
+
+        <a href="https://addons.mozilla.org/en-US/firefox/addon/tweak-it/" target="_blank"
+            class="focus:outline-none px-8 flex items-center gap-x-2 py-4 rounded-lg bg-primary text-text-primary mt-12">
             Get started For Free
             <p class="w-6 h-6" v-html="arrowRight">
 
             </p>
-        </button>
+        </a>
         <laptop />
     </section>
 </template>

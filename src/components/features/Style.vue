@@ -6,7 +6,7 @@ import { lightning } from '../../icons';
     <section class="w-11/12 flex pt-[5vh] gap-y-4 flex-col">
         <header class="flex items-center gap-x-6 md:gap-x-8">
             <div v-html="lightning" class="w-6 h-6 text-primary"></div>
-            <h3 class="text-xl gradient-text font-semibold">What is a style?</h3>
+            <h3 class="text-xl gradient-text font-semibold">Style</h3>
         </header>
         <p>Style refers to a collection of settings that control the appearance of elements, including
         </p>
