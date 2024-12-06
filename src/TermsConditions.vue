@@ -22,7 +22,8 @@ import Layout from './layout/Layout.vue';
                 <h2 class="font-semibold text-xl text-white">2. Description of Service</h2>
                 <p>"TweakIt" is a browser extension that allows users to customize web applications’ background colors
                     and
-                    typography. We offer free trial and paid subscription plans for access to all features.</p>
+                    typography. We offer free tier with limited features and paid subscription plans for access to all
+                    features.</p>
             </div>
             <div class="flex flex-col gap-y-2">
                 <h2 class="font-semibold text-xl text-white">3. User Accounts and Subscriptions</h2>

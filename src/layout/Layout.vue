@@ -3,6 +3,7 @@ import { lightning } from '../icons';
 import AppFooter from '../components/App-Footer.vue';
 import { reactive } from 'vue';
 import { onMounted } from 'vue';
+import { open } from '../api';
 
 const data = reactive({
     width: 0,
@@ -46,17 +47,17 @@ onMounted(() => {
                     <a href="/#why-us" class="text-lg">Why Us?</a>
                     <a href="/#pricing" class="text-lg">Pricing</a>
                     <a href="/#frequently-asked-questions" class="text-lg">FAQs</a>
-                    <a href="https://addons.mozilla.org/en-US/firefox/addon/tweak-it/" target="_blank"
+                    <button @click="open"
                         class="flex focus:outline-none sm:hidden items-center px-4 py-2 rounded-md gap-x-2 bg-primary text-text-primary">
                         Get Started
                         <span class="w-6 h-6 flex" v-html="lightning"></span>
-                    </a>
+                    </button>
                 </nav>
-                <a href="https://addons.mozilla.org/en-US/firefox/addon/tweak-it/" target="_blank"
+                <button @click="open"
                     class="items-center hidden sm:flex px-4 py-2 rounded-md gap-x-2 bg-primary text-text-primary">
                     Get Started
                     <span class="w-6 h-6 flex" v-html="lightning"></span>
-                </a>
+                </button>
                 <svg v-show="!data.showNav" @click="data.showNav = true" xmlns="http://www.w3.org/2000/svg" width="24"
                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                     stroke-linecap="round" stroke-linejoin="round" class="lucide sm:hidden lucide-menu cursor-pointer">

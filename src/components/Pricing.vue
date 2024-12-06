@@ -6,6 +6,40 @@ import { tick, arrowRight } from '../icons';
     <section id="pricing" class="flex border-[dashed] border-dashed flex-col z-10 w-full items-center py-[10vh]">
         <h2 class="font-semibold text-3xl gradient-text">Pricing</h2>
         <div
+            class="mt-10 sm:w-11/12 bg-gray-gradient border border-gray-700 rounded-lg flex sm:flex-row flex-col sm:p-6 px-4 py-6 lg:p-8">
+            <div class="flex w-full sm:w-1/2  sm:p-8 flex-col gap-y-4">
+                <div class="flex gap-x-2 items-center font-semibold">
+                    <h2 class="text-primary  text-3xl">Free Tier - Forever</h2>
+                </div>
+                <div class="mt-2 sm:mt-6">
+                    <button
+                        class="px-4 xl:px-8 flex items-center !shadow gap-x-2 py-4 rounded-lg !bg-transparent border-primary border text-slate-100">
+                        Get Started
+                        <p class="w-6 h-6" v-html="arrowRight">
+                        </p>
+                    </button>
+                </div>
+            </div>
+            <div class="flex flex-col w-full sm:w-1/2 xl:p-8 sm:p-4 sm:mt-0 mt-10 gap-y-8">
+                <div class="flex items-center gap-x-4 sm:gap-x-6">
+                    <div v-html="tick" class="w-6 h-6"></div>
+                    <p class="">Preset Styles</p>
+                </div>
+                <div class="flex items-center gap-x-4 sm:gap-x-6">
+                    <div v-html="tick" class="w-6 h-6"></div>
+                    <p class="">Intelligent Color Adjustment</p>
+                </div>
+                <div class="flex items-center gap-x-4 sm:gap-x-6">
+                    <div v-html="tick" class="w-6 h-6"></div>
+                    <p class="">Email Support</p>
+                </div>
+                <div class="flex items-center gap-x-4 sm:gap-x-6">
+                    <div v-html="tick" class="w-6 h-6"></div>
+                    <p class="">Access to future updates</p>
+                </div>
+            </div>
+        </div>
+        <div
             class="mt-10 sm:w-11/12 bg-green-gradient border border-gray-700 rounded-lg flex sm:flex-row flex-col sm:p-6 px-4 py-6 lg:p-8">
             <div class="flex w-full sm:w-1/2  sm:p-8 flex-col gap-y-4">
                 <div class="flex gap-x-2 items-center font-semibold">
@@ -18,7 +52,7 @@ import { tick, arrowRight } from '../icons';
                 </div>
                 <div class="mt-2 sm:mt-6">
                     <button class="px-4 xl:px-8 flex items-center gap-x-2 py-4 rounded-lg bg-primary text-text-primary">
-                        Start Free 15 days Trial Now
+                        Try Now
                         <p class="w-6 h-6" v-html="arrowRight">
                         </p>
                     </button>

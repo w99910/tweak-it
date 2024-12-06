@@ -211,7 +211,7 @@ onMounted(() => {
 })
 </script>
 <template>
-    <div ref="containerRef" class="w-screen z-10 h-[60vh] sm:h-[70vh] mt-10">
+    <div ref="containerRef" class="w-screen z-10 h-[60vh] sm:h-[70vh] mt-6">
 
     </div>
 </template>
