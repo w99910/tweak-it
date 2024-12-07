@@ -43,10 +43,10 @@ onMounted(() => {
                         <path d="M18 6 6 18" />
                         <path d="m6 6 12 12" />
                     </svg>
-                    <a href="/#features" class="text-lg">Features</a>
-                    <a href="/#why-us" class="text-lg">Why Us?</a>
-                    <a href="/#pricing" class="text-lg">Pricing</a>
-                    <a href="/#frequently-asked-questions" class="text-lg">FAQs</a>
+                    <a href="/#features" class="text-lg no-underline">Features</a>
+                    <a href="/documentation" class="text-lg no-underline">Documentation</a>
+                    <a href="/#pricing" class="text-lg no-underline">Pricing</a>
+                    <a href="/#frequently-asked-questions" class="text-lg no-underline">FAQs</a>
                     <button @click="open"
                         class="flex focus:outline-none sm:hidden items-center px-4 py-2 rounded-md gap-x-2 bg-primary text-text-primary">
                         Get Started

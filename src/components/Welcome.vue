@@ -22,8 +22,8 @@ import Laptop from './Laptop.vue';
         </div>
         <div class="flex items-center w-full justify-center gap-x-4 mt-10">
             <p>Available On: </p>
-            <svg class="w-8 h-10" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
-                viewBox="0 0 48 48">
+            <!-- <svg id="chrome-icon" class="w-8 h-10" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100"
+                height="100" viewBox="0 0 48 48">
                 <path fill="#4caf50" d="M44,24c0,11.044-8.956,20-20,20S4,35.044,4,24S12.956,4,24,4S44,12.956,44,24z">
                 </path>
                 <path fill="#ffc107"
@@ -40,8 +40,8 @@ import Laptop from './Laptop.vue';
                 <path fill="#fff" d="M33,24c0,4.969-4.031,9-9,9s-9-4.031-9-9s4.031-9,9-9S33,19.031,33,24z"></path>
                 <path fill="#2196f3" d="M31,24c0,3.867-3.133,7-7,7s-7-3.133-7-7s3.133-7,7-7S31,20.133,31,24z"></path>
             </svg>
-            <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" width="64" height="64" version="1"
-                viewBox="0 0 64 64">
+            <svg id="chromium-icon" class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" width="64" height="64"
+                version="1" viewBox="0 0 64 64">
                 <circle style="opacity:.2" cx="32" cy="33" r="28" />
                 <path style="opacity:.1"
                     d="m31.988333 59.969839c-15.503815 0-27.985666-12.481451-27.985666-27.985667 0-0.234677-0.006-0.466373 0-0.699631 0.3700156 15.176819 12.716048 27.285675 27.985666 27.285675 15.269019 0 27.615672-12.108656 27.985667-27.285675 0.006 0.233257 0 0.464954 0 0.699631 0 15.503816-12.481451 27.985667-27.985667 27.985667z" />
@@ -60,8 +60,8 @@ import Laptop from './Laptop.vue';
                 <rect style="fill:#6b9edf" width="22" height="22" x="-43" y="-43" rx="11" ry="11"
                     transform="matrix(0,-1,-1,0,0,0)" />
             </svg>
-            <svg class="w-8 h-10" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
-                viewBox="0 0 48 48">
+            <svg id="brave-icon" class="w-8 h-10" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100"
+                height="100" viewBox="0 0 48 48">
                 <path fill="#ff651f"
                     d="M41,13l1,4l-4.09,16.35c-0.59,2.35-2.01,4.41-4.01,5.79l-8.19,5.68c-0.51,0.36-1.11,0.53-1.71,0.53	c-0.6,0-1.2-0.17-1.71-0.53l-8.19-5.68c-2-1.38-3.42-3.44-4.01-5.79L6,17l1-4l-1-2l3.25-3.25c1.05-1.05,2.6-1.44,4.02-0.99	c0.04,0.01,0.07,0.02,0.1,0.03L14,7l4-4h12l4,4l0.65-0.22c0.83-0.28,1.7-0.27,2.5,0c0.58,0.19,1.13,0.51,1.58,0.95	c0.01,0.01,0.01,0.01,0.02,0.02L42,11L41,13z">
                 </path>
@@ -83,9 +83,9 @@ import Laptop from './Laptop.vue';
                 <path fill="#f5f5f5"
                     d="M29.51,32.49l-4.8,3.8c-0.19,0.19-0.45,0.29-0.71,0.29v-7.46c0.16,0,0.31,0.03,0.45,0.1l4.93,2.47	C29.68,31.84,29.75,32.25,29.51,32.49z">
                 </path>
-            </svg>
+            </svg> -->
 
-            <svg class="w-7 h-7" height="256px"
+            <svg id="firefox-icon" class="w-7 h-7" height="256px"
                 style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
                 version="1.1" viewBox="0 0 255999 255998" width="256px" xml:space="preserve"
                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -127,10 +127,9 @@ import Laptop from './Laptop.vue';
                             d="M13578 68548c0,0 14878,-31348 47452,-31348 0,0 14591,-1752 28501,12656 0,0 13433,8311 22181,9958l25726 -247c0,0 6510,12168 -15334,15601l-24430 0c0,0 4415,12661 11015,19664l13415 14085c-12159,-955 -23269,-2168 -35523,-2550l-4294 824c-18320,25915 11033,60611 31673,73442l32574 33749c0,0 40717,-21092 44788,-67497 0,0 8144,-54842 28502,-92810 0,0 18607,12180 31545,33842 3013,11283 4630,23166 4630,35444 0,73252 -57315,132637 -128017,132637 -54306,0 -100711,-35039 -119314,-84485 -3968,-24586 40637,37150 90714,18485l-217 -307c-58776,-2426 -65291,-67178 -85587,-121143z" />
                     </g>
                 </g>
-                <rect class="fil13" height="255998" width="255998" x="1" />
             </svg>
-            <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                viewBox="0 0 80 80">
+            <svg id="zen-icon" class="w-8 h-8" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 80 80">
                 <defs>
                     <linearGradient id="e" x1="40" y1="80" x2="40" y2="0" gradientUnits="userSpaceOnUse">
                         <stop offset=".1" stop-color="#fff" stop-opacity=".02" />
@@ -165,7 +164,7 @@ import Laptop from './Laptop.vue';
     </section>
 </template>
 
-<style scoped>
+<style>
 .g {
     fill: #000;
 }

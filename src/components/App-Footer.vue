@@ -15,24 +15,25 @@
                 <div class="flex flex-col gap-y-4 sm:gap-y-8 px-6 sm:px-8">
                     <h2 class="text-primary text-lg">Product</h2>
                     <div class="flex flex-col gap-y-3 sm:gap-y-5">
-                        <a href="/#features">Features</a>
-                        <a href="/#why-us">Why Us?</a>
-                        <a href="/#pricing">Pricing</a>
-                        <a href="https://www.linkedin.com/in/thomas-brillion/">Creator</a>
+                        <a href="/#features" class="no-underline">Features</a>
+                        <a href="/#pricing" class="no-underline">Pricing</a>
+                        <a href="/documentation" class="no-underline">Documentation</a>
+                        <a href="/#why-us" class="no-underline">Why Us?</a>
+                        <a href="https://www.linkedin.com/in/thomas-brillion/" class="no-underline">Creator</a>
                     </div>
                 </div>
                 <div class="flex flex-col gap-y-4 sm:gap-y-8 px-6 sm:px-8">
                     <h2 class="text-primary text-lg">Support</h2>
                     <div class="flex flex-col gap-y-3 sm:gap-y-5">
-                        <a href="/#frequently-asked-questions">FAQs</a>
-                        <a href="mailto:support@tweakit.today" target="_blank">Contact Us</a>
+                        <a href="/#frequently-asked-questions" class="no-underline">FAQs</a>
+                        <a href="mailto:support@tweakit.today" target="_blank" class="no-underline">Contact Us</a>
                     </div>
                 </div>
                 <div class="flex flex-col gap-y-4 sm:gap-y-8 px-6 sm:px-8">
                     <h2 class="text-primary text-lg">Legal</h2>
                     <div class="flex flex-col gap-y-3 sm:gap-y-5">
-                        <RouterLink to="/privacy-policy">Privacy Policy</RouterLink>
-                        <RouterLink to="/terms-and-conditions">Terms & Conditions</RouterLink>
+                        <RouterLink to="/privacy-policy" class="no-underline">Privacy Policy</RouterLink>
+                        <RouterLink to="/terms-and-conditions" class="no-underline">Terms & Conditions</RouterLink>
                     </div>
                 </div>
             </div>

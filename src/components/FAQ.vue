@@ -9,18 +9,18 @@ const faqs = [{
     question: 'Do you collect my data?',
     answer: `TL;DR - We only collect your name and email in order to manage your subscription and account status. You can always turn on/off the "sync settings" feature if you don't want to store your styles in our server. For more information, please consult our <a class="text-primary underline" href="/privacy-policy" target="_blank">privacy_policy</a>.`,
 }, {
-    question: 'How can I contact for support',
+    question: 'How can I contact for support?',
     answer: `Currently, we provide support exclusively via email. For assistance, please contact our support team at <a class="text-primary cursor-pointer underline"
                             href="mailto:support@tweakit.today" target="_blank">support@tweakit.today</a>.`,
 }, {
     question: 'Will you add more features later?',
-    answer: "Of course, we would love to add more features and will try to deliever them as soon as possible.",
+    answer: "Of course, we would love to add more features and will try to deliever them frequently.",
 }, {
     question: 'Do you offer a refund?',
     answer: `Paid subscriptions are non-refundable. If you experience an issue, please contact us at <a class="text-primary cursor-pointer underline" href="mailto:support@tweakit.today" target="_blank">support@tweakit.today</a>, and we will work to resolve it.`,
 }, {
     question: 'Does it work on my browser?',
-    answer: `Currently, we only support the Chrome Desktop version as Chrome does not permit extensions to run on mobile browsers. We plan to expand support for Desktop versions of Brave and Opera browsers.`
+    answer: `Currently, we support the Desktop versions of Chrome, Chromium, Brave, Firefox and Zen Browser as browser extensions are not allowed to run on mobile browsers except safari extensions.`
 }]
 
 const toggleQuestion = function (index: number) {
