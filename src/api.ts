@@ -1,5 +1,5 @@
 export function open() {
-    const userAgent = navigator.userAgent;
+    // const userAgent = navigator.userAgent;
     let storeUrl = "https://addons.mozilla.org/en-US/firefox/addon/tweak-it/";
 
     // if (userAgent.includes("Chrome")) {
