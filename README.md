@@ -1,7 +1,32 @@
 TWEAK IT
 
-- Tired of waiting for your favourite website to support dark mode or light mode? 
+## Get started
 
-- Turn any website into any theme you want with this intelligent web styler.
+- Install dependencies
 
-- Preset Styles, Your Own Custom Style, Applied on all websites or only specific website 
+```bash
+npm i
+```
+
+or 
+```bash
+pnpm i
+```
+
+- Run Dev server or Build it
+
+```bash
+pnpm run dev 
+```
+
+```bash
+pnpm run build
+```
+
+
+- Access the server at default url `http://localhost:5173`
+
+
+## License
+
+MIT
