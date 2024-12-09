@@ -15,14 +15,14 @@ import Laptop from './Laptop.vue';
             <p>
                 Limited-Time Offer:
                 <span class="text-primary"> Join the first 100 users </span> and
-                <span class="text-primary">get 50% discount for your first 12 months!</span>
+                <span class="text-primary">get 50% discount - $0.99 for your first 12 months!</span>
                 <br>
-                Don't miss out, the price increases to $3.99 per month after.
+                Don't miss out, the price increases to $1.99 per month after.
             </p>
         </div>
         <div class="flex items-center w-full justify-center gap-x-4 mt-10">
             <p>Available On: </p>
-            <!-- <svg id="chrome-icon" class="w-8 h-10" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100"
+            <svg id="chrome-icon" class="w-8 h-10" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100"
                 height="100" viewBox="0 0 48 48">
                 <path fill="#4caf50" d="M44,24c0,11.044-8.956,20-20,20S4,35.044,4,24S12.956,4,24,4S44,12.956,44,24z">
                 </path>
@@ -83,8 +83,7 @@ import Laptop from './Laptop.vue';
                 <path fill="#f5f5f5"
                     d="M29.51,32.49l-4.8,3.8c-0.19,0.19-0.45,0.29-0.71,0.29v-7.46c0.16,0,0.31,0.03,0.45,0.1l4.93,2.47	C29.68,31.84,29.75,32.25,29.51,32.49z">
                 </path>
-            </svg> -->
-
+            </svg>
             <svg id="firefox-icon" class="w-7 h-7" height="256px"
                 style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
                 version="1.1" viewBox="0 0 255999 255998" width="256px" xml:space="preserve"

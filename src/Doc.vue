@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { firefox, star, zen } from './icons';
+import { brave, chrome, chromium, firefox, star, zen } from './icons';
 import Layout from './layout/Layout.vue';
 </script>
 
@@ -24,13 +24,26 @@ import Layout from './layout/Layout.vue';
                     So you can install our extension in
                 </p>
                 <div class="flex flex-wrap gap-4 px-2">
-                    <button class="px-4 shadow bg-primary text-dark py-2 flex items-center gap-x-4 rounded">
+                    <a href="https://chromewebstore.google.com/detail/tweak-it/gkeoohnfijokalcjimhnodjlbdgfbibb"
+                        target="_blank" class="px-4 shadow bg-primary text-dark py-2 flex items-center gap-x-4 rounded">
+                        Install on Chrome<span v-html="chrome"></span>
+                    </a>
+                    <a href="https://chromewebstore.google.com/detail/tweak-it/gkeoohnfijokalcjimhnodjlbdgfbibb"
+                        target="_blank" class="px-4 shadow bg-primary text-dark py-2 flex items-center gap-x-4 rounded">
+                        Install on Chromium<span v-html="chromium"></span>
+                    </a>
+                    <a href="https://chromewebstore.google.com/detail/tweak-it/gkeoohnfijokalcjimhnodjlbdgfbibb"
+                        target="_blank" class="px-4 shadow bg-primary text-dark py-2 flex items-center gap-x-4 rounded">
+                        Install on Brave<span v-html="brave"></span>
+                    </a>
+                    <a href="https://addons.mozilla.org/en-US/firefox/addon/tweak-it/" target="_blank"
+                        class="px-4 shadow bg-primary text-dark py-2 flex items-center gap-x-4 rounded">
                         Install on Firefox<span v-html="firefox"></span>
-                    </button>
-                    <button class="px-4 shadow bg-primary text-dark py-2 flex items-center gap-x-4 rounded">
+                    </a>
+                    <a href="https://addons.mozilla.org/en-US/firefox/addon/tweak-it/" target="_blank"
+                        class="px-4 shadow bg-primary text-dark py-2 flex items-center gap-x-4 rounded">
                         Install on Zen Browser<span v-html="zen"></span>
-                    </button>
-
+                    </a>
                 </div>
                 <p class="px-2">After adding the extension in your browser, proceed the following steps: </p>
                 <ul class="list-disc mx-4">
