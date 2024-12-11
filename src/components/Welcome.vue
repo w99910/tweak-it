@@ -151,14 +151,20 @@ import Laptop from './Laptop.vue';
                 </g>
             </svg>
         </div>
-        <button @click="open"
-            class="focus:outline-none px-8 flex items-center gap-x-2 py-4 rounded-lg bg-primary text-text-primary mt-8">
-            Get started For Free
-            <p class="w-6 h-6" v-html="arrowRight">
+        <div class="flex items-center gap-4 flex-col sm:flex-row mt-8">
+            <button @click="open"
+                class="focus:outline-none px-8 flex items-center gap-x-2 py-4 rounded-lg bg-primary text-text-primary ">
+                Get started For Free
+                <p class="w-6 h-6" v-html="arrowRight">
 
-            </p>
-        </button>
-
+                </p>
+            </button>
+            <a href="https://www.producthunt.com/posts/tweakit?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-tweakit"
+                target="_blank"><img
+                    src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=692325&theme=light"
+                    alt="TweakIt - Ultimate&#0032;Web&#0032;Styler&#0032;Extension&#0032;&#0045;&#0032;Your&#0032;web&#0044;&#0032;your&#0032;style&#0033; | Product Hunt"
+                    style="width: 260px; height: 62px;" width="250" height="62" /></a>
+        </div>
         <laptop />
     </section>
 </template>
