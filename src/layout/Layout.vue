@@ -26,7 +26,7 @@ onMounted(() => {
 <template>
     <div class="bg-dark scroll-smooth font-inter text-slate-200 tracking-wider flex flex-col items-center overflow-y-auto overflow-x-hidden"
         :style="{ width: data.width + 'px', height: data.height + 'px' }">
-        <div class="w-full py-3 gap-x-2 bg-primary text-dark flex items-center justify-center"> <svg
+        <div class="w-full p-3 gap-x-2 bg-primary text-dark flex items-center justify-center"> <svg
                 xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                 class="lucide lucide-circle-alert w-6 h-6 min-w-4 min-h-4">
