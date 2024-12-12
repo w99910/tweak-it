@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { tick, arrowRight } from '../icons';
+import { open } from '../api';
 </script>
 
 <template>
@@ -12,7 +13,7 @@ import { tick, arrowRight } from '../icons';
                     <h2 class="text-primary  text-3xl">Free Tier - Forever</h2>
                 </div>
                 <div class="mt-2 sm:mt-6">
-                    <button
+                    <button @click="open"
                         class="px-4 xl:px-8 flex items-center !shadow gap-x-2 py-4 rounded-lg !bg-transparent border-primary border text-slate-100">
                         Get Started
                         <p class="w-6 h-6" v-html="arrowRight">
@@ -51,7 +52,8 @@ import { tick, arrowRight } from '../icons';
                     <h3 class="text-xl text-orange-500">50% discount for first 100 users</h3>
                 </div>
                 <div class="mt-2 sm:mt-6">
-                    <button class="px-4 xl:px-8 flex items-center gap-x-2 py-4 rounded-lg bg-primary text-text-primary">
+                    <button @click="open"
+                        class="px-4 xl:px-8 flex items-center gap-x-2 py-4 rounded-lg bg-primary text-text-primary">
                         Try Now
                         <p class="w-6 h-6" v-html="arrowRight">
                         </p>
