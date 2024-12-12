@@ -32,7 +32,7 @@ import { open } from '../api';
                 </div>
                 <div class="flex items-center gap-x-4 sm:gap-x-6">
                     <div v-html="tick" class="w-6 h-6"></div>
-                    <p class="">Email Support</p>
+                    <p class="">Email Support Within 7 Business Days</p>
                 </div>
                 <div class="flex items-center gap-x-4 sm:gap-x-6">
                     <div v-html="tick" class="w-6 h-6"></div>
@@ -87,7 +87,7 @@ import { open } from '../api';
                 </div>
                 <div class="flex items-center gap-x-4 sm:gap-x-6">
                     <div v-html="tick" class="w-6 h-6"></div>
-                    <p class="">Email Support</p>
+                    <p class="">Email Support Within 1 Business Days</p>
                 </div>
                 <div class="flex items-center gap-x-4 sm:gap-x-6">
                     <div v-html="tick" class="w-6 h-6"></div>
