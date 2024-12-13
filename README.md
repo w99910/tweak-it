@@ -31,13 +31,22 @@ pnpm run build
 
 Landing Page
 
+Easy-to-use feature-riched performant 
+
 - Welcome
-- Use-cases
 - Features
+    - Easy to use
+    - Performant
     - Intelligent Color Adjustment
     - Preset Styles
     - Custom Styles
+    - Exclude Elements
     - Many more features
+        - Unlimited browsers
+        - Unlimited websites
+        - Unlimited access to features
+        - Priority Customer Support 
+- Resources
 - Feedbacks
 - Pricing
     - One-time
