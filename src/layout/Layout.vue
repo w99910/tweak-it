@@ -26,7 +26,7 @@ onMounted(() => {
 <template>
     <div class="bg-dark scroll-smooth font-inter text-slate-200 tracking-wider flex flex-col items-center overflow-y-auto overflow-x-hidden"
         :style="{ width: data.width + 'px', height: data.height + 'px' }">
-        <div class="w-full p-3 gap-x-2 bg-primary text-dark flex items-center justify-center"> <svg
+        <!-- <div class="w-full p-3 gap-x-2 bg-primary text-dark flex items-center justify-center"> <svg
                 xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                 class="lucide lucide-circle-alert w-6 h-6 min-w-4 min-h-4">
@@ -34,7 +34,7 @@ onMounted(() => {
                 <line x1="12" x2="12" y1="8" y2="12" />
                 <line x1="12" x2="12.01" y1="16" y2="16" />
             </svg> Currently, our chrome extension was unpublished by mistake and now undergoing a new process. Sorry
-            for any incovenience.</div>
+            for any incovenience.</div> -->
         <div class="w-full sm:bg-inherit bg-dark px-4 sm:w-10/12 md:w-9/12 lg:w-8/12 relative 2xl:w-7/12 flex flex-col">
             <header id="header" class="w-full z-20 bg-dark py-4 flex sticky top-0 items-center justify-between">
                 <router-link to="/">

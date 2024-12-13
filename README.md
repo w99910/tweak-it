@@ -29,6 +29,22 @@ pnpm run build
 
 ## TODO 
 
+Landing Page
+
+- Welcome
+- Use-cases
+- Features
+    - Intelligent Color Adjustment
+    - Preset Styles
+    - Custom Styles
+    - Many more features
+- Feedbacks
+- Pricing
+    - One-time
+    - Monthly
+    - Yearly 
+- FAQ
+
 Blogs
 
 - How to turn any website into dark mode - 2025
