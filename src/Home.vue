@@ -11,7 +11,7 @@ import Faq from './components/FAQ.vue';
 <template>
     <layout>
         <welcome />
-        <why-us />
+        <!-- <why-us /> -->
         <features />
         <pricing />
         <faq />

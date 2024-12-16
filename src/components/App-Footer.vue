@@ -17,7 +17,7 @@
                     <div class="flex flex-col gap-y-3 sm:gap-y-5">
                         <a href="/#features" class="no-underline">Features</a>
                         <a href="/#pricing" class="no-underline">Pricing</a>
-                        <a href="/documentation" class="no-underline">Documentation</a>
+                        <a href="https://doc.tweakit.today" target="_blank" class="no-underline">Documentation</a>
                         <a href="/#why-us" class="no-underline">Why Us?</a>
                         <a href="https://www.linkedin.com/in/thomas-brillion/" class="no-underline">Creator</a>
                     </div>

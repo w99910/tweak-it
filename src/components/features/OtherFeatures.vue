@@ -10,7 +10,9 @@ import { lightning } from '../../icons';
                 <h3 class="text-xl gradient-text font-semibold"> Sync Settings Across All Devices </h3>
             </header>
             <p>
-                Keep your preferences consistent no matter where you go. Sync your settings across all devices for a
+                Keep your preferences consistent no matter which browsers or devices you use. Sync your settings across
+                all devices
+                for a
                 seamless and personalized experience everywhere.
             </p>
         </div>

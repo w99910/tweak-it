@@ -8,10 +8,10 @@ import { lightning } from '../../icons';
             <div v-html="lightning" class="w-6 h-6 text-primary"></div>
             <h3 class="text-xl gradient-text font-semibold"> Preset Styles</h3>
         </header>
-        <p>Explore the preset styles or create your own custom looks for your favorite website. Once you’re happy, let
-            <span class="text-primary">Tweak It</span> handle the styling automatically every time you visit!
+        <p>Explore several preset styles available in TweakIt. We will also add more preset styles frequently. Stay
+            tuned!!
         </p>
-        <video class="mt-8 rounded-lg opacity-80" muted controls loop playsinline src="../../assets/preset.mp4">
+        <video class="mt-8 rounded-lg opacity-80" muted controls loop playsinline src="../../assets/preset-styles.mp4">
 
         </video>
     </section>

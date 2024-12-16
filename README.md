@@ -31,21 +31,32 @@ pnpm run build
 
 Landing Page
 
+Carousels of popular websites with different themes
+
 Easy-to-use feature-riched performant 
+
+Best Friend for browsers
+
+Developed By An User for Users
+
+Made for You
 
 - Welcome
 - Features
     - Easy to use
-    - Performant
+    - Performant - Don't break websites 
+    - Works on any website
     - Intelligent Color Adjustment
+    - Support Transparent Background
     - Preset Styles
     - Custom Styles
     - Exclude Elements
     - Many more features
+        - Sync Settings Across All Devices
+        - Style Per Website / Global Style
         - Unlimited browsers
         - Unlimited websites
-        - Unlimited access to features
-        - Priority Customer Support 
+
 - Resources
 - Feedbacks
 - Pricing
@@ -69,6 +80,8 @@ Blogs
 - Alternative to DarkReader
 - Alternative to Midnight lizard
 - Alternative to Stylish
+
+YT, Reddit, Twitter, Instagram, Facebook, TikTok, Gmail, Outlook, GitHub, Google, DuckDuckGo
 
 
 ## License

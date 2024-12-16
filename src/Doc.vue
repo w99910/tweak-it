@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { brave, chrome, chromium, firefox, star, zen } from './icons';
+import { arc, brave, chrome, chromium, firefox, star, zen } from './icons';
 import Layout from './layout/Layout.vue';
 </script>
 
@@ -35,6 +35,10 @@ import Layout from './layout/Layout.vue';
                     <a href="https://chromewebstore.google.com/detail/tweak-it/gkeoohnfijokalcjimhnodjlbdgfbibb"
                         target="_blank" class="px-4 shadow bg-primary text-dark py-2 flex items-center gap-x-4 rounded">
                         Install on Brave<span v-html="brave"></span>
+                    </a>
+                    <a href="https://chromewebstore.google.com/detail/tweak-it/gkeoohnfijokalcjimhnodjlbdgfbibb"
+                        target="_blank" class="px-4 shadow bg-primary text-dark py-2 flex items-center gap-x-4 rounded">
+                        Install on Arc Browser<span v-html="arc"></span>
                     </a>
                     <a href="https://addons.mozilla.org/en-US/firefox/addon/tweak-it/" target="_blank"
                         class="px-4 shadow bg-primary text-dark py-2 flex items-center gap-x-4 rounded">
