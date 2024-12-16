@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import { onMounted } from 'vue';
 import Layout from './layout/Layout.vue';
-import confetti from 'canvas-confetti'
+
+import confetti from 'canvas-confetti';
 
 onMounted(async () => {
     const colors = ["#ef476f", "#ffd166", "#06d6a0", "#118ab2", "#073b4c"];
@@ -33,7 +34,7 @@ onMounted(async () => {
         animationEnd = Date.now() + duration,
         defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
 
-    function randomInRange(min, max) {
+    function randomInRange(min: any, max: any) {
         return Math.random() * (max - min) + min;
     }
 
@@ -83,19 +84,21 @@ onMounted(async () => {
                 <p>Please kindly find the following resources to leverage the paid features.</p>
                 <ul class="list-disc list-inside">
                     <li class="py-2">
-                        <a href="https://doc.tweakit.today/" target="_blank">Basic Usage</a>
+                        <a href="https://doc.tweakit.today/basic_usage" target="_blank">Basic Usage</a>
                     </li>
                     <li class="py-2">
-                        <a href="https://doc.tweakit.today/" target="_blank">Custom Style</a>
+                        <a href="https://doc.tweakit.today/CustomStyle" target="_blank">Custom Style</a>
                     </li>
                     <li class="py-2">
-                        <a href="https://doc.tweakit.today/" target="_blank">Sync Settings</a>
+                        <a href="https://doc.tweakit.today/Settings/sync_settings" target="_blank">Sync Settings</a>
                     </li>
                     <li class="py-2">
-                        <a href="https://doc.tweakit.today/" target="_blank">Auto Apply Style</a>
+                        <a href="https://doc.tweakit.today/Settings/auto_apply_style" target="_blank">Auto Apply
+                            Style</a>
                     </li>
                     <li class="py-2">
-                        <a href="https://doc.tweakit.today/" target="_blank">Managing Subscription</a>
+                        <a href="https://doc.tweakit.today/Subscription/manage" target="_blank">Managing
+                            Subscription</a>
                     </li>
                 </ul>
             </div>

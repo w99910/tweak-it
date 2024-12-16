@@ -3,7 +3,6 @@ import PresetStyles from './features/PresetStyles.vue';
 import CustomStyle from './features/CustomStyle.vue';
 import ExcludeElement from './features/ExcludeElement.vue';
 import OtherFeatures from './features/OtherFeatures.vue';
-import MyStyle from './features/Style.vue';
 import { lightning } from '../icons';
 </script>
 

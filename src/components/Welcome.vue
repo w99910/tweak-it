@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { open } from '../api';
 import { arrowRight, star } from '../icons';
-import Laptop from './Laptop.vue';
+// import Laptop from './Laptop.vue';
 import Carousel from './Carousel.vue';
 
 </script>

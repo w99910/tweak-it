@@ -10,7 +10,9 @@ import ChangeLetterSpacing from '../../assets/features/change-letter-spacing.web
 import ChangeWordSpacing from '../../assets/features/change-word-spacing.webm?url'
 import ChangeLineHeight from '../../assets/features/change-line-height.webm?url'
 
-const styles = {
+const styles: {
+    [key: string]: any
+} = {
     'Background Color': ChangeBackground,
     'Width': ChangeWidth,
     'Font Color': ChangeFontColor,
