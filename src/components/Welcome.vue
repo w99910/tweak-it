@@ -1,13 +1,47 @@
 <script setup lang="ts">
+import { onMounted, ref } from 'vue';
 import { open } from '../api';
 import { arrowRight, star } from '../icons';
 // import Laptop from './Laptop.vue';
 import Carousel from './Carousel.vue';
+import AnimeScrollTrigger from 'https://cdn.jsdelivr.net/npm/anime-scrolltrigger@0.1.0/dist/anime-scrolltrigger.es.js';
+import anime from 'animejs'
+
+const r = ref(null)
+
+onMounted(() => {
+    let container = document.getElementById('container');
+    const animations = [];
+    ['h1', 'div'].forEach((selector) => {
+        r.value.querySelectorAll(selector).forEach((el, i) => {
+            anime({
+                targets: el,
+                debug: {
+                    startTriggerOffsetMarker: '#f6a945',
+                    endTriggerOffsetMarker: '#ffd291',
+                    startScrollerOffsetMarker: '#4b45f6',
+                    endScrollerOffsetMarker: '#d5d4ff',
+                },
+                translateY: [10, 0],
+                opacity: [0, 1],
+                easing: 'easeOutQuart',
+                duration: 1200,
+                delay: i * 200,
+                // scrollTrigger: {
+                //     trigger: r.value,
+                //     start: '-10% top',
+                //     end: 'bottom 30%',
+                // }
+            })
+        })
+    })
+    // new AnimeScrollTrigger(container, animations);
+})
 
 </script>
 
 <template>
-    <section class="flex z-10 flex-col w-full items-center justify-center px-4 sm:px-0 pt-[5vh] sm:pt-[10vh]">
+    <section ref="r" class="flex z-10 flex-col w-full items-center justify-center px-4 sm:px-0 pt-[5vh] sm:pt-[10vh]">
         <h1 class="font-bold text-5xl">Your Web, Your Style!</h1>
         <div class="font-medium flex-wrap text-lg mt-5 text-text-gray flex items-center gap-2">
             <span class="px-2 py-1 rounded bg-[#ffe66d] text-dark">Easy-To-Use</span> <span

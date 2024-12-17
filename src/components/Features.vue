@@ -4,10 +4,42 @@ import CustomStyle from './features/CustomStyle.vue';
 import ExcludeElement from './features/ExcludeElement.vue';
 import OtherFeatures from './features/OtherFeatures.vue';
 import { lightning } from '../icons';
+import { onMounted, ref } from 'vue';
+import AnimeScrollTrigger from 'https://cdn.jsdelivr.net/npm/anime-scrolltrigger@0.1.0/dist/anime-scrolltrigger.es.js';
+
+const r = ref(null)
+
+onMounted(() => {
+    let container = document.getElementById('container');
+    const animations: Array<any> = [];
+    ['h1', 'h2', 'h3', 'p', 'div', 'video'].forEach((selector) => {
+        (r.value as HTMLElement).querySelectorAll(selector).forEach((el, i) => {
+            animations.push({
+                targets: el,
+                debug: {
+                    startTriggerOffsetMarker: '#f6a945',
+                    endTriggerOffsetMarker: '#ffd291',
+                    startScrollerOffsetMarker: '#4b45f6',
+                    endScrollerOffsetMarker: '#d5d4ff',
+                },
+                translateY: [10, 0],
+                opacity: [0, 1],
+                easing: 'easeOutQuart',
+                duration: 1200,
+                scrollTrigger: {
+                    trigger: el,
+                    start: '-20% center',
+                    end: 'bottom 30%',
+                }
+            })
+        })
+    })
+    new AnimeScrollTrigger(container, animations);
+})
 </script>
 
 <template>
-    <section id="features"
+    <section ref="r" id="features"
         class="flex flex-col border border-t border-[dashed] border-dashed z-10 w-full items-center py-[10vh]">
         <h2 class="font-semibold text-4xl gradient-text">Features</h2>
         <!-- <p class="text-text-gray mt-4 px-2 text-center">Tweak your style and ease your readability</p> -->

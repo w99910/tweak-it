@@ -1,10 +1,36 @@
 <script setup lang="ts">
+import { onMounted, ref } from 'vue';
+import AnimeScrollTrigger from 'https://cdn.jsdelivr.net/npm/anime-scrolltrigger@0.1.0/dist/anime-scrolltrigger.es.js';
+
+const r = ref(null)
+
+onMounted(() => {
+    let container = document.getElementById('container');
+    const animations: Array<any> = [];
+    ['header', 'p'].forEach((selector) => {
+        (r.value! as HTMLElement).querySelectorAll(selector).forEach((el, i) => {
+            animations.push({
+                targets: el,
+                translateY: [10, 0],
+                opacity: [0, 1],
+                easing: 'easeOutQuart',
+                duration: 1200,
+                scrollTrigger: {
+                    trigger: r.value,
+                    start: 'top center',
+                    end: 'bottom top',
+                }
+            })
+        })
+    })
+    new AnimeScrollTrigger(container, animations);
+})
 </script>
 
 <template>
-    <section id="why-us"
+    <section ref="r" id="why-us"
         class="flex border-[dashed] border-b items-center gap-y-4 border-dashed flex-col z-10 w-full py-[8vh]">
-        <header class="font-semibold text-3xl gradient-text">Why Us?</header>
+        <header class="font-semibold text-3xl gradient-text">Why TweakIt?</header>
         <div class=" mt-8 w-11/12">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"

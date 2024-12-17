@@ -1,14 +1,48 @@
 <script setup lang="ts">
 import { tick, arrowRight } from '../icons';
 import { open } from '../api';
+import { onMounted, ref } from 'vue';
+import AnimeScrollTrigger from 'https://cdn.jsdelivr.net/npm/anime-scrolltrigger@0.1.0/dist/anime-scrolltrigger.es.js';
 
 const openUrl = (url: string) => {
     window.open(url, "_blank");
 }
+
+const r = ref(null)
+
+onMounted(() => {
+    let container = document.getElementById('container');
+    const animations: Array<any> = [];
+    ['h1', 'h2', 'h3', 'p', 'div', 'video'].forEach((selector) => {
+        (r.value! as HTMLElement).querySelectorAll(selector).forEach((el, i) => {
+            animations.push({
+                targets: el,
+                debug: {
+                    startTriggerOffsetMarker: '#f6a945',
+                    endTriggerOffsetMarker: '#ffd291',
+                    startScrollerOffsetMarker: '#4b45f6',
+                    endScrollerOffsetMarker: '#d5d4ff',
+                },
+                translateY: [10, 0],
+                opacity: [0, 1],
+                easing: 'easeOutQuart',
+                duration: 1200,
+                scrollTrigger: {
+                    trigger: el,
+                    start: '-20% center',
+                    end: 'bottom 30%',
+                }
+            })
+        })
+    })
+    new AnimeScrollTrigger(container, animations);
+})
+
 </script>
 
 <template>
-    <section id="pricing" class="flex border-[dashed] border-dashed flex-col z-10 w-full items-center py-[10vh]">
+    <section ref="r" id="pricing"
+        class="flex border-[dashed] border-dashed flex-col z-10 w-full items-center py-[10vh]">
         <h2 class="font-semibold text-3xl gradient-text">Pricing</h2>
         <div
             class="mt-10 w-full sm:w-11/12 bg-gray-gradient border border-gray-700 rounded-lg flex sm:flex-row flex-col sm:p-6 px-4 py-6 lg:p-8">
@@ -56,7 +90,8 @@ const openUrl = (url: string) => {
             class="mt-10 w-full sm:w-11/12 bg-green-gradient border border-gray-700 rounded-lg flex sm:flex-row flex-col sm:p-6 px-4 py-6 lg:p-8">
             <div class="flex w-full sm:w-1/2  sm:p-8 flex-col gap-y-4 justify-between">
                 <div class="flex items-center gap-x-2">
-                    <h3 class="text-xl text-orange-400">50% Discount for first 100 users</h3>
+                    <h3 class="text-lg text-orange-400">50% Discount for first 100 users - Use <em
+                            class="font-semibold">EARLYBIRDS</em> Promo code at checkout</h3>
                 </div>
                 <div class="flex w-full flex-col border-b border-gray-500/50 pb-6">
                     <div class="flex gap-x-2 items-center font-semibold">

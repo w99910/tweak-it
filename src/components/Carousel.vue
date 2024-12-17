@@ -10,6 +10,7 @@ import page4 from '../assets/show-cases/show-case-4.png?url';
 import page5 from '../assets/show-cases/show-case-5.png?url';
 import page6 from '../assets/show-cases/show-case-6.png?url';
 import page7 from '../assets/show-cases/show-case-7.png?url';
+import page8 from '../assets/show-cases/show-case-8.png?url';
 import Splide from '@splidejs/splide';
 import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
 
@@ -25,6 +26,7 @@ const showCases = [
     page5,
     page6,
     page7,
+    page8,
 ]
 
 onMounted(() => {
