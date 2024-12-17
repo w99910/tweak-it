@@ -3,17 +3,15 @@ import { onMounted, ref } from 'vue';
 import { open } from '../api';
 import { arrowRight, star } from '../icons';
 // import Laptop from './Laptop.vue';
+// @ts-ignore
 import Carousel from './Carousel.vue';
-import AnimeScrollTrigger from 'https://cdn.jsdelivr.net/npm/anime-scrolltrigger@0.1.0/dist/anime-scrolltrigger.es.js';
 import anime from 'animejs'
 
 const r = ref(null)
 
 onMounted(() => {
-    let container = document.getElementById('container');
-    const animations = [];
     ['h1', 'div'].forEach((selector) => {
-        r.value.querySelectorAll(selector).forEach((el, i) => {
+        (r.value! as HTMLElement).querySelectorAll(selector).forEach((el: any, i: any) => {
             anime({
                 targets: el,
                 debug: {
@@ -27,15 +25,9 @@ onMounted(() => {
                 easing: 'easeOutQuart',
                 duration: 1200,
                 delay: i * 200,
-                // scrollTrigger: {
-                //     trigger: r.value,
-                //     start: '-10% top',
-                //     end: 'bottom 30%',
-                // }
             })
         })
     })
-    // new AnimeScrollTrigger(container, animations);
 })
 
 </script>

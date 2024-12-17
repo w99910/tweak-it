@@ -2,6 +2,8 @@
 import { tick, arrowRight } from '../icons';
 import { open } from '../api';
 import { onMounted, ref } from 'vue';
+
+// @ts-ignore
 import AnimeScrollTrigger from 'https://cdn.jsdelivr.net/npm/anime-scrolltrigger@0.1.0/dist/anime-scrolltrigger.es.js';
 
 const openUrl = (url: string) => {
@@ -14,7 +16,7 @@ onMounted(() => {
     let container = document.getElementById('container');
     const animations: Array<any> = [];
     ['h1', 'h2', 'h3', 'p', 'div', 'video'].forEach((selector) => {
-        (r.value! as HTMLElement).querySelectorAll(selector).forEach((el, i) => {
+        (r.value! as HTMLElement).querySelectorAll(selector).forEach((el) => {
             animations.push({
                 targets: el,
                 debug: {

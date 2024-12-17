@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue';
+// @ts-ignore
 import AnimeScrollTrigger from 'https://cdn.jsdelivr.net/npm/anime-scrolltrigger@0.1.0/dist/anime-scrolltrigger.es.js';
 
 const r = ref(null)
@@ -8,7 +9,7 @@ onMounted(() => {
     let container = document.getElementById('container');
     const animations: Array<any> = [];
     ['header', 'p'].forEach((selector) => {
-        (r.value! as HTMLElement).querySelectorAll(selector).forEach((el, i) => {
+        (r.value! as HTMLElement).querySelectorAll(selector).forEach((el) => {
             animations.push({
                 targets: el,
                 translateY: [10, 0],
