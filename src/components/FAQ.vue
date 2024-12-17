@@ -20,7 +20,7 @@ const faqs = [{
     answer: `Paid subscriptions are non-refundable. If you experience an issue, please contact us at <a class="text-primary cursor-pointer underline" href="mailto:support@tweakit.today" target="_blank">support@tweakit.today</a>, and we will work to resolve it.`,
 }, {
     question: 'Does it work on my browser?',
-    answer: `Currently, we support the Desktop versions of Chrome, Chromium, Brave, Firefox and Zen Browser as browser extensions are not allowed to run on mobile browsers except safari extensions.`
+    answer: `Currently, we support Chrome, Chromium, Arc Browser, Brave Browser, Firefox Browser and Zen Browser. You can download related extension <a class="text-primary cursor-pointer underline" href="https://doc.tweakit.today" target="_blank">here</a>.`
 }]
 
 const toggleQuestion = function (index: number) {
@@ -44,7 +44,7 @@ const toggleQuestion = function (index: number) {
                 class="overflow-hidden faq cursor-pointer py-6 border-b border-gray-400 w-full flex flex-col"
                 v-for="(faq, i) in faqs" :key="i">
                 <div class="flex items-center w-full justify-between">
-                    <h2 class="w-10/12 font-medium text-lg sm:text-xl">{{ faq.question }}</h2>
+                    <h2 class="w-10/12 font-medium text-lg">{{ faq.question }}</h2>
                     <div style="transition: all 0.2s ease-out;" class="w-6 h-6 chevron-right-icon"
                         v-html="chevronRight"></div>
                 </div>
