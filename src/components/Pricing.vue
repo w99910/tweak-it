@@ -90,50 +90,21 @@ onMounted(() => {
         </div>
         <div id="subscription"
             class="mt-10 w-full sm:w-11/12 bg-green-gradient border border-gray-700 rounded-lg flex sm:flex-row flex-col sm:p-6 px-4 py-6 lg:p-8">
-            <div class="flex w-full sm:w-1/2  sm:p-8 flex-col gap-y-4 justify-between">
+            <div class="flex w-full sm:w-1/2  sm:p-8 flex-col gap-y-4">
                 <div class="flex items-center gap-x-2">
                     <h3 class="text-lg text-orange-400">50% Discount for first 100 users - Use <em
                             class="font-semibold">EARLYBIRDS</em> Promo code at checkout</h3>
                 </div>
-                <div class="flex w-full flex-col border-b border-gray-500/50 pb-6">
-                    <div class="flex gap-x-2 items-center font-semibold">
-                        <h3 class="text-gray-300 text-xl line-through">$1.99</h3>
-                        <h2 class="text-primary  text-3xl">$0.99</h2>
-                        <p>/ per month</p>
-                    </div>
-                    <div class="mt-4">
-                        <button @click="openUrl('https://buy.stripe.com/3cs8yKd1z9Qg8yk6oo')"
-                            class="px-4 xl:px-8 flex items-center gap-x-2 py-3  rounded-lg border-primary text-primary !shadow border hover:text-dark">
-                            Try Monthly Subscription
-                            <p class="w-6 h-6" v-html="arrowRight">
-                            </p>
-                        </button>
-                    </div>
-                </div>
-                <div class="flex w-full flex-col border-b border-gray-500/50 pb-6">
+                <div class="flex w-full flex-col mt-6">
                     <div class="flex gap-x-2 items-center font-semibold">
                         <h3 class="text-gray-300 text-xl line-through">$20.00</h3>
                         <h2 class="text-primary  text-3xl">$10.00</h2>
-                        <p>/ per year</p>
+                        <p>/ lifetime</p>
                     </div>
-                    <div class="mt-4">
-                        <button @click="openUrl('https://buy.stripe.com/9AQ7uGaTr3rS4i45kl')"
-                            class="px-4 xl:px-8 flex items-center gap-x-2 py-3  rounded-lg border-primary text-primary !shadow border hover:text-dark">
-                            Try Yearly Subscription
-                            <p class="w-6 h-6" v-html="arrowRight">
-                            </p>
-                        </button>
-                    </div>
-                </div>
-                <div class="flex w-full flex-col pb-6">
-                    <div class="flex gap-x-2 items-center font-semibold">
-                        <h2 class="text-primary  text-3xl">$40.00</h2>
-                        <p>/ one time</p>
-                    </div>
-                    <div class="mt-4">
-                        <button @click="openUrl('https://buy.stripe.com/28o8yK5z78MceWI146')"
+                    <div class="mt-6">
+                        <button @click="openUrl('https://buy.stripe.com/8wMaGS3qZaUk15S9AD')"
                             class="px-4 xl:px-8 flex items-center gap-x-2 py-3  rounded-lg bg-primary text-text-primary">
-                            Purchase One-Time Subscription
+                            Purchase Now
                             <p class="w-6 h-6" v-html="arrowRight">
                             </p>
                         </button>
