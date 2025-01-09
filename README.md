@@ -80,6 +80,7 @@ Blogs
 - Alternative to DarkReader
 - Alternative to Midnight lizard
 - Alternative to Stylish
+- Compose an article on how individuals with impairments can benefit from using the extension.
 
 YT, Reddit, Twitter, Instagram, Facebook, TikTok, Gmail, Outlook, GitHub, Google, DuckDuckGo
 

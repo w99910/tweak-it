@@ -3,14 +3,11 @@
 import { chevronRight } from '../icons';
 
 const faqs = [{
-    question: 'Can I cancel subscription by myself?',
-    answer: "You can cancel your subscription in Stripe customer portal. You can access to that portal by opening extension menu, switching to settings page and clicking 'Manage subscription' button.",
-}, {
     question: 'Do you collect my data?',
     answer: `TL;DR - We only collect your name and email in order to manage your subscription and account status. You can always turn on/off the "sync settings" feature if you don't want to store your styles in our server. For more information, please consult our <a class="text-primary underline" href="/privacy-policy" target="_blank">privacy_policy</a>.`,
 }, {
     question: 'How can I contact for support?',
-    answer: `Currently, we provide support exclusively via email. For assistance, please contact our support team at <a class="text-primary cursor-pointer underline"
+    answer: `Currently, we provide support via email exclusively. For assistance, please contact our support team at <a class="text-primary cursor-pointer underline"
                             href="mailto:support@tweakit.today" target="_blank">support@tweakit.today</a>.`,
 }, {
     question: 'Will you add more features later?',

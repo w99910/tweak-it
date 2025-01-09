@@ -10,35 +10,36 @@ import anime from 'animejs'
 const r = ref(null)
 
 onMounted(() => {
-    ['h1', 'div'].forEach((selector) => {
-        (r.value! as HTMLElement).querySelectorAll(selector).forEach((el: any, i: any) => {
-            anime({
-                targets: el,
-                debug: {
-                    startTriggerOffsetMarker: '#f6a945',
-                    endTriggerOffsetMarker: '#ffd291',
-                    startScrollerOffsetMarker: '#4b45f6',
-                    endScrollerOffsetMarker: '#d5d4ff',
-                },
-                translateY: [10, 0],
-                opacity: [0, 1],
-                easing: 'easeOutQuart',
-                duration: 1200,
-                delay: i * 200,
-            })
-        })
-    })
+    // ['h1', 'div'].forEach((selector) => {
+    //     (r.value! as HTMLElement).querySelectorAll(selector).forEach((el: any, i: any) => {
+    //         anime({
+    //             targets: el,
+    //             debug: {
+    //                 startTriggerOffsetMarker: '#f6a945',
+    //                 endTriggerOffsetMarker: '#ffd291',
+    //                 startScrollerOffsetMarker: '#4b45f6',
+    //                 endScrollerOffsetMarker: '#d5d4ff',
+    //             },
+    //             translateY: [10, 0],
+    //             opacity: [0, 1],
+    //             easing: 'easeOutQuart',
+    //             duration: 1200,
+    //             delay: i * 200,
+    //         })
+    //     })
+    // })
 })
 
 </script>
 
 <template>
     <section ref="r" class="flex z-10 flex-col w-full items-center justify-center px-4 sm:px-0 pt-[5vh] sm:pt-[10vh]">
-        <h1 class="font-bold text-5xl">Your Web, Your Style!</h1>
-        <div class="font-medium flex-wrap text-lg mt-5 text-text-gray flex items-center gap-2">
-            <span class="px-2 py-1 rounded bg-[#ffe66d] text-dark">Easy-To-Use</span> <span
-                class="px-2 py-1 rounded bg-[#ff6b6b] text-dark">
-                Feature-Riched</span> <span class="px-2 py-1 rounded bg-[#004e98] text-white"> Performant</span>
+        <h1 class="font-bold text-5xl relative">Your Web, Your Style!
+        </h1>
+        <div class="font-medium flex-wrap mt-5 text-text-gray flex items-center gap-2">
+            <span class="px-2 py-1 rounded border-primary border text-primary">Easy-To-Use</span> <span
+                class="px-2 py-1 rounded border-primary border text-primary">
+                Feature-Rich</span> <span class="px-2 py-1 rounded border-primary border text-primary"> Efficient</span>
         </div>
         <!-- <div class="flex items-center gap-x-4 md:gap-x-8 mt-8 justify-center">
             <span class="flex w-6 h-6 text-primary" v-html="star"></span>
@@ -52,9 +53,9 @@ onMounted(() => {
         </div> -->
         <div class="flex font-semibold text-xl  items-center capitalize gap-x-2 md:gap-x-4 mt-8 justify-center">
             <span class="flex w-6  h-6 text-primary" v-html="star"></span>
-            <p>Ultimate Web Styler Extension For <span class="text-primary">YOU</span></p>
+            <p>Tweak a look of any website to your taste</p>
         </div>
-        <div class="flex sm:flex-row flex-col items-center w-full justify-center gap-x-4 mt-10">
+        <div class="flex sm:flex-row flex-col items-center w-full justify-center gap-x-4 mt-8">
             <p>Available On: </p>
             <div class="flex gap-x-4 items-center sm:mt-0 mt-2">
                 <svg id="chrome-icon" class="w-8 h-10" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100"
@@ -254,11 +255,11 @@ onMounted(() => {
 
                 </p>
             </button>
-            <a href="https://www.producthunt.com/posts/tweakit?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-tweakit"
+            <!-- <a href="https://www.producthunt.com/posts/tweakit?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-tweakit"
                 target="_blank"><img
                     src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=692325&theme=light"
                     alt="TweakIt - Ultimate&#0032;Web&#0032;Styler&#0032;Extension&#0032;&#0045;&#0032;Your&#0032;web&#0044;&#0032;your&#0032;style&#0033; | Product Hunt"
-                    style="width: 260px; height: 62px;" width="250" height="62" /></a>
+                    style="width: 260px; height: 62px;" width="250" height="62" /></a> -->
         </div>
         <!-- <laptop /> -->
         <carousel />

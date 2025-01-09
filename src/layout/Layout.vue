@@ -25,7 +25,7 @@ onMounted(() => {
 
 <template>
     <div id="container"
-        class="bg-dark scroll-smooth font-inter text-slate-200 tracking-wider flex flex-col items-center overflow-y-auto overflow-x-hidden"
+        class="bg-radial-green scroll-smooth font-inter text-slate-200 tracking-wider flex flex-col items-center overflow-y-auto overflow-x-hidden"
         :style="{ width: data.width + 'px', height: data.height + 'px' }">
         <!-- <div class="w-full p-3 gap-x-2 bg-primary text-dark flex items-center justify-center"> <svg
                 xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -37,7 +37,7 @@ onMounted(() => {
             </svg> Currently, our chrome extension was unpublished by mistake and now undergoing a new process. Sorry
             for any incovenience.</div> -->
         <div class="w-full items-center sm:bg-inherit bg-dark  relative  flex flex-col">
-            <div class="w-full sticky top-0 flex items-center justify-center z-20 bg-dark px-4">
+            <div class="w-full sticky top-0 flex items-center justify-center z-20 bg-transparent backdrop-blur px-4">
                 <header id="header"
                     class="w-full sm:w-10/12 md:w-9/12 lg:w-8/12 2xl:w-7/12   py-4 flex items-center justify-between">
                     <router-link to="/">
@@ -82,7 +82,7 @@ onMounted(() => {
                 </header>
             </div>
             <main class="relative flex w-full sm:w-10/12 md:w-9/12 lg:w-8/12 2xl:w-7/12 flex-col items-center">
-                <div class="h-full left-0 absolute w-1/2 border-l border-r border-[dashed] border-dashed">
+                <div class="h-full left-0 absolute w-1/2 border-l border-[dashed] border-dashed">
                 </div>
                 <div class="h-full right-0 absolute w-1/2 border-r border-[dashed] border-dashed">
                 </div>

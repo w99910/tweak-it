@@ -14,6 +14,9 @@ const styles: {
     [key: string]: any
 } = {
     'Background Color': ChangeBackground,
+    'Background Image': ChangeBackground,
+    'Cursor Style': ChangeBackground,
+    'Hover Cursor Style': ChangeBackground,
     'Width': ChangeWidth,
     'Font Color': ChangeFontColor,
     'Font Size': ChangeFontSize,

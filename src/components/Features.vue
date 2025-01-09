@@ -12,40 +12,42 @@ import AnimeScrollTrigger from 'https://cdn.jsdelivr.net/npm/anime-scrolltrigger
 const r = ref(null)
 
 onMounted(() => {
-    let container = document.getElementById('container');
-    const animations: Array<any> = [];
-    ['h1', 'h2', 'h3', 'p', 'div', 'video'].forEach((selector) => {
-        (r.value! as HTMLElement).querySelectorAll(selector).forEach((el) => {
-            animations.push({
-                targets: el,
-                debug: {
-                    startTriggerOffsetMarker: '#f6a945',
-                    endTriggerOffsetMarker: '#ffd291',
-                    startScrollerOffsetMarker: '#4b45f6',
-                    endScrollerOffsetMarker: '#d5d4ff',
-                },
-                translateY: [10, 0],
-                opacity: [0, 1],
-                easing: 'easeOutQuart',
-                duration: 1200,
-                scrollTrigger: {
-                    trigger: el,
-                    start: '-20% center',
-                    end: 'bottom 30%',
-                }
-            })
-        })
-    })
-    new AnimeScrollTrigger(container, animations);
+    // if (window.innerWidth > 500) {
+    //     let container = document.getElementById('container');
+    //     const animations: Array<any> = [];
+    //     ['h1', 'h2', 'h3', 'p', 'div', 'video'].forEach((selector) => {
+    //         (r.value! as HTMLElement).querySelectorAll(selector).forEach((el) => {
+    //             animations.push({
+    //                 targets: el,
+    //                 debug: {
+    //                     startTriggerOffsetMarker: '#f6a945',
+    //                     endTriggerOffsetMarker: '#ffd291',
+    //                     startScrollerOffsetMarker: '#4b45f6',
+    //                     endScrollerOffsetMarker: '#d5d4ff',
+    //                 },
+    //                 translateY: [10, 0],
+    //                 opacity: [0, 1],
+    //                 easing: 'easeOutQuart',
+    //                 duration: 1200,
+    //                 scrollTrigger: {
+    //                     trigger: el,
+    //                     start: '-20% center',
+    //                     end: 'bottom 30%',
+    //                 }
+    //             })
+    //         })
+    //     })
+    //     new AnimeScrollTrigger(container, animations);
+    // }
 })
 </script>
 
 <template>
     <section ref="r" id="features"
-        class="flex flex-col border border-t border-[dashed] border-dashed z-10 w-full items-center py-[10vh]">
+        class="flex flex-col border border-t border-[dashed] border-dashed z-10 w-full items-center py-[6vh]">
         <h2 class="font-semibold text-4xl gradient-text">Features</h2>
         <!-- <p class="text-text-gray mt-4 px-2 text-center">Tweak your style and ease your readability</p> -->
-        <div class="flex items-center w-full flex-col gap-y-8 mt-12">
+        <div class="flex items-center w-full flex-col gap-y-8 mt-16">
             <div class="flex w-full flex-wrap gap-y-24">
                 <div class="w-full sm:w-1/2 px-4 sm:px-8 gap-y-8 flex flex-col">
                     <header class="flex items-center gap-x-6 md:gap-x-8">
@@ -63,13 +65,13 @@ onMounted(() => {
                 <div class="w-full sm:w-1/2 px-4 sm:px-8 gap-y-8 flex flex-col">
                     <header class="flex items-center gap-x-6 md:gap-x-8">
                         <div v-html="lightning" class="w-6 h-6 text-primary"></div>
-                        <h3 class="text-xl gradient-text font-semibold"> Performant </h3>
+                        <h3 class="text-xl gradient-text font-semibold"> Efficient </h3>
                     </header>
                     <p>
                         We really care about your browsing experience. In order to provide you a smooth and seamless
                         experience,
                         TweakIt is optimized to be
-                        <span class="text-primary">performant</span> and
+                        <span class="text-primary">fast</span> and
                         <span class="text-primary">prevent breaking your websites.</span>
                     </p>
                 </div>
