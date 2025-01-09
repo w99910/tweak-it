@@ -32,7 +32,7 @@ onMounted(() => {
 </script>
 
 <template>
-    <section id="what-tweakit"
+    <section ref="r" id="what-tweakit"
         class="flex border-[dashed] border-b items-center mt-8 gap-y-4 border-dashed flex-col z-10 w-full py-[8vh]">
         <header class="font-semibold text-3xl gradient-text">What is TweakIt?</header>
         <div class=" mt-8 leading-8 w-11/12">

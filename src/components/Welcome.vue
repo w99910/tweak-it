@@ -5,7 +5,7 @@ import { arrowRight, star } from '../icons';
 // import Laptop from './Laptop.vue';
 // @ts-ignore
 import Carousel from './Carousel.vue';
-import anime from 'animejs'
+// import anime from 'animejs'
 
 const r = ref(null)
 
