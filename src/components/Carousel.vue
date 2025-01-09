@@ -41,8 +41,8 @@ onMounted(() => {
         focus: 'center',
         perMove: 1,
         breakpoints: {
-            640: {
-                perPage: 2,
+            520: {
+                perPage: 1,
                 gap: '2rem'
             },
             1024: {
