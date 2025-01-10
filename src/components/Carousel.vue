@@ -45,20 +45,19 @@ onMounted(() => {
                 perPage: 1,
                 gap: '2rem',
                 autoScroll: {
-                    speed: 0.25,
+                    speed: 0.35,
                     pauseOnHover: false,
                 },
             },
             1024: {
                 perPage: 3,
                 gap: '3rem',
-                autoScroll: {
-                    speed: 0.25,
-                    pauseOnHover: false,
-                },
             }
         },
-
+        autoScroll: {
+            speed: 0.25,
+            pauseOnHover: false,
+        },
     });
 
     // splide.on('move', () => {
