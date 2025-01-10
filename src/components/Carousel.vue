@@ -45,7 +45,7 @@ onMounted(() => {
                 perPage: 1,
                 gap: '2rem',
                 autoScroll: {
-                    speed: 0.35,
+                    speed: 0.25,
                     pauseOnHover: false,
                 },
             },
